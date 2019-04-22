@@ -126,7 +126,6 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
                     </div>
-                    <p><a href="#">Forgot your Password?</a></p>
                 </form>
                 <?php echo form_close(); ?>
             </div>
