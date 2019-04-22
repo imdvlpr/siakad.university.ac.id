@@ -17,8 +17,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <style type="text/css">
-    html{
+    body{
         background-image: url("http://baa.telkomuniversity.ac.id/wp-content/uploads/2016/10/P_20150820_165253-e1478601677404.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 300;
     }
     .form-control {
         min-height: 41px;
@@ -29,7 +33,7 @@
       .form-control:focus {
         background: #e2e2e2;
       }
-      .form-control, .btn {        
+      .form-control, .btn {
             border-radius: 2px;
         }
       .login-form {
@@ -42,13 +46,13 @@
         }
         .login-form form {
         color: #7a7a7a;
-        border-radius: 3px;
+        /* border-radius: 3px; */
           margin-bottom: 15px;
             background: #fff;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
             padding: 30px;
         }
-        .login-form .btn {        
+        .login-form .btn {
             font-size: 16px;
             font-weight: bold;
         background: #3598dc;
@@ -74,15 +78,15 @@
       }
   </style>
   <body class="hold-transition login-page" style="overflow: hidden; background-color: transparent;">
-    <header class="main-header">
-        <a href="#" class="logo" style="background-color: transparent;">
+      <header class="main-header">
+        <a href="#" class="logo" style="background-color: transparent; width:33%; text-align:left; padding-left:50px;">
           <!-- <span class="logo-mini"><b>U</b>NV</span> -->
           <b>SIAKAD UNIV</b>
         </a>
         <nav class="navbar navbar-static-top">
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <div class="pull-right" style="margin-left: 365px">
+                <div class="mx-auto">
                     <a href="#" class="btn btn-default btn-flat">Beranda</a>
                     <a href="#" class="btn btn-default btn-flat">Jadwal Kuliah</a>
                     <a href="#" class="btn btn-default btn-flat">Jadwal Ujian</a>
@@ -93,6 +97,9 @@
             </ul>
           </div>
         </nav>
+        <div class="" style="width:33%">
+
+        </div>
       </header>
       <div class="container" style="background-color: transparent; margin-top: 40px;">
         <h2 class="text-center">Sistem Informasi Akademik</h2>
@@ -104,7 +111,7 @@
           <div class="col-md-4">
             <div class="card text-white mb-3" style="max-width: 22rem;">
               <?php echo form_open("main_controller/login"); ?>
-              <div class="card-header bg-primary text-center"><b>Login SIAKAD</b></div>
+              <div class="card-header text-center" style="background:#357CA5;"><b>LOGIN SIAKAD</b></div>
               <div class="card-body">
                 <h9 class="card-title" style="color: black;"><b>ID Pengguna</b></h9>
                 <div class="form-group has-error">
@@ -116,7 +123,7 @@
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-info btn-lg btn-block">Login</button>
-                </div>        
+                </div>
               </div>
             </div>
               <?php echo form_close(); ?>
