@@ -16,8 +16,8 @@
     </a>
     <nav class="navbar navbar-static-top">
       <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav" style="margin-left: 1400px;">
-          <li class="dropdown user user-menu">
+        <ul class="nav navbar-nav" style="margin-left : 1400px; ">
+          <li class="dropdown user user-menu float-right">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <?php
                 if($this->session->level==1){
@@ -131,11 +131,11 @@
                 <div class="pull-left">
                     <?php if($this->session->level == 2){
                     ?>
-                        <a href="<?php echo base_url();?>main_controller/view_dsn_editprofil" class="btn btn-default btn-flat">Profile</a>
+                        <a href="<?php echo base_url();?>index.php/main_controller/view_dsn_editprofil" class="btn btn-default btn-flat">Profile</a>
                     <?php
                     }else if($this->session->level == 3){
                     ?>
-                        <a href="<?php echo base_url();?>main_controller/view_mhs_editprofil" class="btn btn-default btn-flat">Profile</a>
+                        <a href="<?php echo base_url();?>index.php/main_controller/view_mhs_editprofil" class="btn btn-default btn-flat">Profile</a>
                     <?php
                     }?>
                 </div>
