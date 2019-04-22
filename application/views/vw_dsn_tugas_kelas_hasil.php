@@ -22,8 +22,8 @@
 <hr>
 <div class="col">
 
-  <div class="row">
-    <div class="container">
+
+    <div class="">
     <div class="box box-primary">
       <div class="box-header with-border">
           <?php if (isset($tugas->row()->judul_tugas)) {

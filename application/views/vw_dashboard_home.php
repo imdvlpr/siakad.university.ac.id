@@ -61,7 +61,7 @@
 <div class="col">
   <?php if ($this->session->flashdata('success')) : ?>
   <div class="row mt-3">
-      <div class="col">
+      <div class="col" style="border-top: 0px solid #3C8DBC !important;max-width: 50%; margin-left: 10px;">
           <div class="alert alert-success alert-dismissible fade show" role="alert">
               <?= $this->session->flashdata('success'); ?>.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -73,7 +73,7 @@
   <?php endif; ?>
   <?php if ($this->session->flashdata('danger')) : ?>
   <div class="row mt-3">
-      <div class="col">
+      <div class="col" style="border-top: 0px solid #3C8DBC !important;max-width: 50%; margin-left: 10px;">
           <div class="alert alert-danger alert-dismissible fade show" role="alert">
               <?= $this->session->flashdata('danger'); ?>.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">

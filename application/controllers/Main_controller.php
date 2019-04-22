@@ -2094,7 +2094,7 @@
 		    }
 		    public function redirect_tipe_kuisioner(){
 		    	if ($this->session->level == 1){
-		    		$data['kuisioner_tipe_dua'] = $this->main_model->get_judul_kuisioner_by_tipe($tipe);
+		    		$data['kuisioner_tipe_dua'] = $this->main_model->get_judul_kuisioner_by_tipe(2);
 
 			    	$data['main_sidebar'] = 'sb_admin';
 				    $data['main_content'] = 'vw_list_kuisioner_tipe_dua';

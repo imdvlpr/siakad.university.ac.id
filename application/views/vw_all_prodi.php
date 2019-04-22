@@ -104,11 +104,11 @@
      <div class="modal-body">
       <div>
       1. Tambah Prodi<br>
-      Admin dapat menambahkan program studi yang tersedia di STKIP Yasika Majalengka apabila nantinya akan ada program studi baru dan juga belum ada program studi dengan nama yang sama sebelumnya. Dengan memasukan informasi sebagai berikut. Admin harus menambahkan program studi agar nanti saat menambahkan mahasiswa baru, langsung dimasukan ke jurusan mana dan kelas mana. <br><br>
+      Admin dapat menambahkan program studi yang tersedia di UNIVERSITAS  Bandung apabila nantinya akan ada program studi baru dan juga belum ada program studi dengan nama yang sama sebelumnya. Dengan memasukan informasi sebagai berikut. Admin harus menambahkan program studi agar nanti saat menambahkan mahasiswa baru, langsung dimasukan ke jurusan mana dan kelas mana. <br><br>
       2. Melihat Prodi <br>
       Admin dapat melihat program studi.<br><br>
       3. Mengubah Prodi<br>
-      Fitur ini dapat merubah nama program studi apabila nanti ada perubahan di STKIP Yasika terkait nama program studi ataupun apabila admin typo/salah memasukan data nama program studi. <br><br>
+      Fitur ini dapat merubah nama program studi apabila nanti ada perubahan di UNIVERSITAS  terkait nama program studi ataupun apabila admin typo/salah memasukan data nama program studi. <br><br>
       4. Menghapus Prodi <br>
       Menghapus program studi apabila nanti program studi tersebut sudah tidak ada.
       </div>

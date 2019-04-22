@@ -10,7 +10,7 @@
       <div class="float-right">
         <div class="input-group mb-3" style="padding-top: 20px;">
   <div class="input-group-prepend">
-    
+
   </div>
   <span id="date_time"></span>
 <script type="text/javascript">window.onload = date_time('date_time');</script>
@@ -87,7 +87,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            
+
             <h4 class="modal-title" id="myModalLabel">Tambah Mata Kuliah Baru</h4>
           </div>
           <div class="modal-body">
@@ -147,7 +147,7 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 <input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
-            
+
           </div>
           <?php echo form_close(); ?>
           </div>
@@ -161,7 +161,7 @@
    <div class="modal-dialog">
     <div class="modal-content">
      <div class="modal-header">
-      
+
       <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
      </div>
      <div class="modal-body">
@@ -175,11 +175,11 @@
       4. Menghapus Mata Kuliah <br>
       Admin dapat menghapus data mata kuliah apabila kondisi ini diperlukan. <br><br>
       5. Excel <br>
-      Admin dapat mengunduh data mata kuliah apa saja yang ada di STKIP Yasika.
+      Admin dapat mengunduh data mata kuliah apa saja yang ada di Universitas.
       </div>
      </div>
      <div class="modal-footer">
-      
+
      </div>
     </div>
    </div>

@@ -113,7 +113,7 @@
                 <label for="" class="col-md-3">Angkatan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="angkatan">
-                    <option value="1">2018</option>
+                    <option value="1">2019</option>
                     <option value="2">2017</option>
 
                   </select>

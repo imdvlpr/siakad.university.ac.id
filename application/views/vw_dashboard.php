@@ -17,8 +17,8 @@
     </a>
     <nav class="navbar navbar-static-top">
       <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav" style="margin-left : 1400px; ">
-          <li class="dropdown user user-menu float-right">
+        <ul class="nav navbar-nav" style="">
+          <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <?php
                 if($this->session->level==1){
@@ -155,7 +155,7 @@
       <div class="col-2" style="padding-left:40px; padding-top: 20px; border-right: 1px solid #ddd; background:#fff; min-height:910px;">
         <?php $this->load->view($main_sidebar);?>
       </div>
-      <div class="col-10" style="padding-right:35px; padding-top: 20px;padding-left:20px;">
+      <div class="col-10" style="padding-right:20px; padding-top: 20px;padding-left:20px;">
         <?php $this->load->view($main_content);?>
       </div>
     </div>
