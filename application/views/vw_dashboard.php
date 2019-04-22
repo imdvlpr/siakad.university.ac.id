@@ -154,7 +154,7 @@
       <div class="col-2" style="padding-left:40px; padding-top: 20px; border-right: 1px solid #ddd; background:#fff; min-height:910px;">
         <?php $this->load->view($main_sidebar);?>
       </div>
-      <div class="col-10" style="padding-right:10px; padding-top: 20px;padding-left:20px;">
+      <div class="col-10" style="padding-right:20px; padding-top: 20px;padding-left:20px;">
         <?php $this->load->view($main_content);?>
       </div>
     </div>

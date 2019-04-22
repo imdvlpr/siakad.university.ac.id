@@ -79,12 +79,12 @@ table td{
   								<tr>
   									<td><div class="hd_print_biodatamhs" width="100%" align="center">
                 			<div style="width:auto;float:left;margin:5px;">
-                				<img src="STKIP Yasika Majalengka.png" style="width:20mm;height:22mm">
+                				<img src="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" style="width:20mm;height:22mm">
                 			</div>
                 				<div align="left" style="float:left;margin:10px 10px 0px 10px;padding-top: 5px">
-                					<address><b>STKIP Yasika Majalengka</b>
+                					<address><b>Universitas</b>
                 					<br>
-                						Kasokandel, Majalengka <br>
+                						Bojong Soang, Bandung <br>
                 						Jawa Barat 45453 <br>
                 						Indonesia <br>
                 					</address>

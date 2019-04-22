@@ -80,7 +80,7 @@
                </div>
                <div class="modal-body">
                   <div>
-                    <p align="justify">Pada bagian ini menampilkan pilihan pengisian kuisioner, isi semua kuisioner dibawah untuk membantu perkembangan Stkip Yasika Majalengka dengan meng-klik "Input Kuisioner" dan akan muncul beberapa pertanyaan.</p>
+                    <p align="justify">Pada bagian ini menampilkan pilihan pengisian kuisioner, isi semua kuisioner dibawah untuk membantu perkembangan UNIVERSITAS  Bandung dengan meng-klik "Input Kuisioner" dan akan muncul beberapa pertanyaan.</p>
                </div>
                <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>

@@ -246,6 +246,23 @@
     border-top: 3px solid #3C8DBC !important;
     border-radius: 5;
   }
+  .col-xs-12{
+    background-color: #fff;
+    padding: 10px;
+    border-top: 3px solid #3C8DBC !important;
+    border-radius: 5;
+    width: 100%;
+  }
+  .col-md-20{
+    background-color: #fff;
+    padding: 10px;
+    border-top: 3px solid #3C8DBC !important;
+    border-radius: 5;
+    width: 100%;
+  }
+  .box-header{
+    margin-bottom: 10px;
+  }
   .col > .container{
     max-width: 100% !important;
     border-radius: 0;

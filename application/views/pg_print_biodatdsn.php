@@ -47,18 +47,18 @@ table td{
 	<header>
 		<div class="hd_print_biodatamhs" width="100%" align="center" style="float:">
 			<div style="width:auto;float:left;margin:5px;">
-				<img src="STKIP Yasika Majalengka.png" style="width:20mm;height:22mm">
+				<img src="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" style="width:20mm;height:22mm">
 			</div>
 				<div align="left" style="float:left;margin:10px 10px 0px 10px;padding-top: 5px">
-					<address><b>STKIP Yasika Majalengka</b>
+					<address><b>Universitas</b>
 					<br>
-						Kasokandel, Majalengka <br>
+						Bojong Soang, Bandung <br>
 						Java Barat 45453 <br>
 						Indonesia <br>
 					</address>
 				</div>
 				<div style="width:auto;float:right;">
-					<img src="rio.jpg" style="width:20mm;height:22mm">
+					<!-- <img src="" style="width:20mm;height:22mm"> -->
 				</div>
 				<div style="display:block;width:100%;clear:both;">
 				</div>
@@ -158,7 +158,7 @@ table td{
 				<tr>
 					<td width="170px">Gelar Pendidikan</td>
 					<td width="5px">:</td>
-					<td><?php echo $dosen->row()->pendidikan; ?></td>
+					<td><?php echo $dosen->row()->gelar_pendidikan; ?></td>
 				</tr>
 				<tr>
 					<td width="170px">Program Studi</td>

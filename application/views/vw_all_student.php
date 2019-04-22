@@ -346,7 +346,7 @@
        <div class="modal-body">
         <div>
          1. Tambah Mahasiswa<br>
-         Admin dapat menambahkan mahasiswa baru, apabila ada mahasiswa baru pindahan ataupun mahasiswa yang baru daftar dengan syarat sudah lolos seleksi masuk STKIP Yasika. Saat admin menambahkan mahasiswa baru, pastikan sudah mengisi semua data yang tersedia di menu Master Data, seperti kelas, tahun angkatan, dan program studi sehingga saat menambahkan mahasiswa baru admin harus memasukan mahasiswa tersebut kedalam program studi mana, jurusan mana dan pada angkatan berapa.<br><br>
+         Admin dapat menambahkan mahasiswa baru, apabila ada mahasiswa baru pindahan ataupun mahasiswa yang baru daftar dengan syarat sudah lolos seleksi masuk UNIVERSITAS . Saat admin menambahkan mahasiswa baru, pastikan sudah mengisi semua data yang tersedia di menu Master Data, seperti kelas, tahun angkatan, dan program studi sehingga saat menambahkan mahasiswa baru admin harus memasukan mahasiswa tersebut kedalam program studi mana, jurusan mana dan pada angkatan berapa.<br><br>
          2. Lihat Mahasiswa<br>
          Admin dapat melihat informasi mahasiswa jika diperlukan dan langsung dapat diprint.<br><br>
          3. Mengubah Data Mahasiswa<br>

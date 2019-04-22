@@ -21,9 +21,8 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h4 class="title-content">Tabel Kuesioner</h4>
+        <h4 class="title-content">Tabel Kuisioner</h4>
       </div>
-
       <div class="col">
         <input type="submit" style="margin-left: 10px; float:right" href="#" data-toggle="modal" class="btn btn-success" name="login" data-target="#myModal" value="+">
       </div>
@@ -43,7 +42,7 @@
       <?php foreach($judul_kuisioner->result() as $data):?>
       <?php $i += 1; ?>
     <tr>
-      <  <td><?php echo (substr($data->keterangan, 0,4)); echo "-"; echo substr($data->keterangan, -1);?></td>
+        <td><?php echo (substr($data->keterangan, 0,4)); echo "-"; echo substr($data->keterangan, -1);?></td>
         <td><?php echo ($data->tipe); ?></td>
         <td><?php echo ($data->judul); ?></td>
         <td>

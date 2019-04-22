@@ -59,7 +59,7 @@
           <tr>
             <td>1</td>
             <td> Semester 1</td>
-            <td> 10-06-2018</td>
+            <td> 10-06-2019</td>
             <td><span class="label label-success">Lunas</span></td>
             <!-- <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td> -->
           </tr>

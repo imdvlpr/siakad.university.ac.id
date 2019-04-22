@@ -131,9 +131,7 @@
           <div class="col-md-4"></div>
         </div>
       </div>
-    <script src="<?php echo base_url()?>source/AdminLTE_2/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo base_url()?>source/AdminLTE_2/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url()?>source/AdminLTE_2/plugins/iCheck/icheck.min.js"></script>
+
     <script>
       $(function () {
         $('input').iCheck({

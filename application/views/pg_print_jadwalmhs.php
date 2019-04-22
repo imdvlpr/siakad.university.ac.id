@@ -58,7 +58,7 @@ table td{
 	<header>
 		<div class="hd_print_biodatamhs" width="100%" align="center" style="float:">
 			<div style="width:auto;position: middle;margin:5px;">
-				<img src="STKIP Yasika Majalengka.png" style="width:30mm;height:33mm">
+				<img src="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" style="width:30mm;height:33mm">
 			</div>
 			<h3 align="center">KARTU STUDI MAHASISWA</h3>
 		</div>
@@ -136,7 +136,7 @@ table td{
     </tbody>
 	</table>
 	<!-- <p><b>Total SKS ...</b></p> -->
-	<p style="text-align: right; font-family: arial; font-size: 10px;" ><i>Majalengka, 18-05-2018</i><br>Manager Bagian Administrasi Akademik</p>
+	<p style="text-align: right; font-family: arial; font-size: 10px;" ><i>Bandung, 18-05-2019</i><br>Manager Bagian Administrasi Akademik</p>
 
 	<p style="text-align: left; font-family: arial; font-size: 10px;">Bukti pengambilan mata kuliah berdasarkan KSM terakhir yang dicetak
 		<br>Pengubahan atau pemalsuan data KSM akan dikenakan sanksi
