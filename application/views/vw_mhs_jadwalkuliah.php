@@ -35,8 +35,6 @@
                 <div class="col">
                   <h4 class="title-content">Daftar Jadwal Kuliah</h4>
                 </div>
-
-
                 <div class="col">
                   <input type="submit" style="margin-left: 10px; float:right" href="#" data-toggle="modal" class="btn btn-info" name="login" data-target="#help_modal" value="Bantuan">
                   <a href="<?php echo base_url()?>index.php/main_controller/pg_mhs_jadwalkuliah/<?php echo $this->session->kode_user; ?>" style="float:right;" class="btn btn-success  "><i class="fa fa-print"></i> Cetak Jadwal Kuliah</a>
