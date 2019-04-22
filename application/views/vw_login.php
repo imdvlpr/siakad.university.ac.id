@@ -100,25 +100,28 @@
       </div>
       <div class="container" style="background-color: transparent; margin-top: 120px;">
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <div class="login-form">
-                <?php echo form_open("main_controller/login"); ?>
-                    <h4 class="text-center">Login SIAKAD</h4>   
-                    <div class="form-group has-error">
-                      <input type="text" class="form-control" name="username" placeholder="ID pengguna" required="required">
-                    </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="card text-white mb-3" style="max-width: 22rem;">
+              <?php echo form_open("main_controller/login"); ?>
+              <div class="card-header bg-primary text-center"><b>Login SIAKAD</b></div>
+              <div class="card-body">
+                <h9 class="card-title" style="color: black;"><b>ID Pengguna</b></h9>
+                <div class="form-group has-error">
+                  <input type="text" class="form-control" name="username" placeholder="ID pengguna" required="required">
+                </div>
+                <h9 class="card-title" style="color: black;"><b>Kata Sandi</b></h9>
                 <div class="form-group">
-                        <input type="password" class="form-control" name="password" placeholder="Kata sandi" required="required">
-                    </div>        
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
-                    </div>
-                </form>
-                <?php echo form_close(); ?>
+                  <input type="password" class="form-control" name="password" placeholder="Kata sandi" required="required">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-info btn-lg btn-block">Login</button>
+                </div>        
+              </div>
             </div>
+              <?php echo form_close(); ?>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-md-4"></div>
         </div>
       </div>
     <script src="<?php echo base_url()?>source/AdminLTE_2/bower_components/jquery/dist/jquery.min.js"></script>
