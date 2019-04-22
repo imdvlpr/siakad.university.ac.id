@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/dist/css/AdminLTE.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/plugins/iCheck/square/blue.css">
-<link rel="icon" type="image/png" href="<?php echo base_url()?>source/AdminLTE_2/dist/img/stkip_logo.png">
+<link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -58,8 +58,8 @@
 <!-- <img src="<?php echo base_url()?>source/AdminLTE_2/dist/img/loginbg.jpg"> -->
 <div class="login-box" style="background-color: white;padding-top: 60px;border-radius: 10px;" >
   <div class="login-logo" hidden="" style="margin-bottom: 10px">
-    <img src="<?php echo base_url()?>source/AdminLTE_2/dist/img/stkip_logo.png"><br>
-    <a href="#"><b>SIAKAD</b><br> STKIP YASIKA</a>
+    <img src="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" width="170"><br>
+    <a href="#"><b>SIAKAD</b><br> UNIVERSITY</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body" style="border-radius: 10px">

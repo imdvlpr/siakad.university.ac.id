@@ -3,14 +3,16 @@
 <title>SIAKAD UNIV | Dashboard</title>
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-<link rel="icon" type="image/png" href="<?php echo base_url()?>source/AdminLTE_2/dist/img/stkip_logo.png">
+<link rel="shortcut icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+<link rel="stylesheet" href="<?php echo base_url()?>source/ourstyle.css">
 <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/bower_components/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/bower_components/Ionicons/css/ionicons.min.css">
-<link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/dist/css/AdminLTE.min.css">
-<link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/dist/css/skins/_all-skins.min.css">
+<!-- <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/dist/css/AdminLTE.min.css"> -->
+<!-- <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/dist/css/skins/_all-skins.min.css"> -->
+
 <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/bower_components/morris.js/morris.css">
 <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/bower_components/jvectormap/jquery-jvectormap.css">
 <link rel="stylesheet" href="<?php echo base_url()?>source/AdminLTE_2/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css">

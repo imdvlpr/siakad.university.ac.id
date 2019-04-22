@@ -12,7 +12,7 @@
 <div class="wrapper">
   <header class="main-header">
     <a href="<?php echo base_url()?>index.php/main_controller/dashboard" class="logo">
-      <span class="logo-mini"><b>U</b>NV</span>
+      <!-- <span class="logo-mini"><b>U</b>NV</span> -->
       <span class="logo-lg"><b>SIAKAD</b> UNIV 1.0</span>
     </a>
     <nav class="navbar navbar-static-top">
@@ -157,14 +157,6 @@
     </nav>
   </header>
   <?php $this->load->view($main_sidebar);?>
-  <?php $this->load->view($main_content);?>
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0.0
-    </div>
-    <strong>Copyright &copy; 2019 <a href="">UNIVERSITY</a>.</strong> All rights
-    reserved.
-  </footer>
 </div>
 </body>
 </html>
