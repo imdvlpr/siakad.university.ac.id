@@ -83,7 +83,7 @@
       </div>
   </div>
   <?php endif; ?>
-  <div class="">
+  <div class="container">
     <div class="row">
       <div class="col">
         <h4 class="title-content">Tabel Kalender Akademik</h4>

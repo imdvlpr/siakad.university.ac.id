@@ -8,7 +8,7 @@
     <div class="col" style="margin-top:10px;">
       <b>
       <?php echo $this->session->display_name?><br></b>
-      <p style="font-weight:500;">
+      <a style="font-weight:400;"><i class="fa fa-circle text-success"></i>
       <?php
       switch($this->session->level){
       case 1:
@@ -25,7 +25,7 @@
         break;
       }
       ?>
-      </p>
+    </a>
     </div>
   </div>
 </div>
