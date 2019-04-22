@@ -17,7 +17,7 @@
   </div>
 </div>
 <hr>
-<div class="container">
+<div class="">
   <div class="row" id="boxbox">
     <div class="col rounded-lg" style="background-color:#00c0ef !important;">
       <div class="inner">
@@ -83,7 +83,7 @@
       </div>
   </div>
   <?php endif; ?>
-  <div class="container">
+  <div class="">
     <div class="row">
       <div class="col">
         <h4 class="title-content">Tabel Kalender Akademik</h4>

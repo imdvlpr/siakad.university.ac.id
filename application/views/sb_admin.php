@@ -1,28 +1,37 @@
-<div class="judul" style="">
-  <b>SIAKAD</b> UNIV 1.0
-</div>
-<div class="mx-auto" style="width: 128px;">
-  <img src="<?php echo base_url().'/source/dp.png'?>" class="img-circle" alt="User Image" style="max-width:130px;margin-top: 5px;">
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <div class="">
+        <img src="<?php echo base_url().'/source/dp.png'?>" class="img-circle" alt="User Image" style="max-width:100%;margin-top: 5px;">
+      </div>
+    </div>
+    <div class="col" style="margin-top:10px;">
+      <b>
+      <?php echo $this->session->display_name?><br></b>
+      <p style="font-weight:500;">
+      <?php
+      switch($this->session->level){
+      case 1:
+        ?>Admin<?php
+        break;
+      case 2:
+        ?>Dosen<?php
+        break;
+      case 3:
+        ?>Mahasiswa<?php
+        break;
+      default:
+        ?><?php
+        break;
+      }
+      ?>
+      </p>
+    </div>
+  </div>
 </div>
 
-<br><b>
-<?php echo $this->session->display_name?><br>
-<?php
-switch($this->session->level){
-case 1:
-  ?>Admin<?php
-  break;
-case 2:
-  ?>Dosen<?php
-  break;
-case 3:
-  ?>Mahasiswa<?php
-  break;
-default:
-  ?><?php
-  break;
-}
-?></b>
+
+<br>
 
 <div class="input-group mb-3" style="padding-top: 20px;">
   <div class="input-group-prepend">
