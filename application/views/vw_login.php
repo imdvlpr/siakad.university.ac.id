@@ -18,10 +18,7 @@
   </head>
   <style type="text/css">
     html{
-      background-color: #DCDCDC;
-    }
-    .jumbotron{
-      background-image: url("http://baa.telkomuniversity.ac.id/wp-content/uploads/2016/10/P_20150820_165253-e1478601677404.jpg");
+        background-image: url("http://baa.telkomuniversity.ac.id/wp-content/uploads/2016/10/P_20150820_165253-e1478601677404.jpg");
     }
     .form-control {
         min-height: 41px;
@@ -97,20 +94,11 @@
           </div>
         </nav>
       </header>
-      <div class="jumbotron">
+      <div class="container" style="background-color: transparent; margin-top: 40px;">
         <h2 class="text-center">Sistem Informasi Akademik</h2>
         <center><h9>Silahkan Login untuk masuk ke dalam sistem.</h9></center>
       </div>
-      <div class="container" style="background-color: white;">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <center><p><h3>Login</h3></p></center>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-      </div>
-      <div class="container" style="background-color: white;">
+      <div class="container" style="background-color: transparent; margin-top: 120px;">
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
