@@ -17,7 +17,7 @@
   </div>
 </div>
 <hr>
-<div class="container">
+<div class="">
   <div class="row" id="boxbox">
     <div class="col rounded-lg " style="background-color:#00c0ef !important;">
       <div class="inner">

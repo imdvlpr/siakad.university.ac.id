@@ -8,7 +8,7 @@
     </div>
     <div class="col">
       <div class="float-right">
-        <div class="input-group mb-3" style="padding-top: 20px;">
+        <div class="input-group" style="padding-top: 10px;">
           <span id="date_time"></span>
           <script type="text/javascript">window.onload = date_time('date_time');</script>
         </div>

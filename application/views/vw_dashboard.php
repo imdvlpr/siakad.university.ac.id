@@ -84,7 +84,7 @@
 
 
                 <p>
-                  <?php echo $this->session->display_name?>
+                  <?php echo $this->session->display_name?><br>
                 <?php if($this->session->level != 1){
                 ?>
                     <small><?php echo ($this->main_model->getSatuProdi($this->session->id_prodi)->row()->nama_prodi )?></small>
@@ -96,10 +96,10 @@
               </li>
               <li class="user-body">
                 <div class="row">
-                  <div class="col-xs-4 text-center">
+                  <div class="col text-center">
                     <a><?php echo $this->session->kode_user;?></a>
                   </div>
-                   <div class="col-xs-4 text-center">
+                   <div class="col text-center">
                     <a><?php
                 switch($this->session->level){
                   case 1:
@@ -119,7 +119,7 @@
                   </div>
                   <?php if($this->session->level != 1){
                 ?>
-                   <div class="col-xs-4 text-center">
+                   <div class="col text-center">
 
                     <a><?php echo ($this->main_model->getSatuProdi($this->session->id_prodi)->row()->kode_prodi )?></a>
                   </div>

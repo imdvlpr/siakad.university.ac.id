@@ -17,8 +17,6 @@
   </div>
 </div>
 <hr>
-<hr>
-<hr>
 <div class="col">
   <div class="container">
     <div class="row">

@@ -1,40 +1,35 @@
-<div class="judul" style="">
-  <b>SIAKAD</b> UNIV 1.0
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <div class="">
+        <img src="<?php echo base_url().'/source/dp.png'?>" class="img-circle" alt="User Image" style="max-width:100%;margin-top: 5px;">
+      </div>
+    </div>
+    <div class="col" style="margin-top:10px;">
+      <b>
+      <?php echo $this->session->display_name?><br></b>
+      <?php echo ($this->main_model->getSatuProdi($this->session->id_prodi)->row()->nama_prodi)?><br>
+      <a style="font-weight:300;"><i class="fa fa-circle text-success"></i>
+      <?php
+      switch($this->session->level){
+      case 1:
+        ?>Admin<?php
+        break;
+      case 2:
+        ?>Dosen<?php
+        break;
+      case 3:
+        ?>Mahasiswa<?php
+        break;
+      default:
+        ?><?php
+        break;
+      }
+      ?>
+    </a>
+    </div>
+  </div>
 </div>
-<div class="mx-auto" style="width: 128px;">
-
-  <?php if ($this->main_model->getFotoProfilMhs() != '') {
-    ?>
-      <img src="<?php echo base_url().'/uploads/'.$this->main_model->getFotoProfilMhs()?>" class="img-circle" alt="User Image" style="max-width:130px;margin-top: 5px;">
-    <?php
-  }else{
-    ?>
-      <img src="<?php echo base_url().'/source/dp.png'?>" class="img-circle" alt="User Image" style="max-width:130px;margin-top: 5px;">
-    <?php
-  }?>
-</div>
-
-<br>
-<b>
-  <?php echo $this->session->display_name?><br>
-  <?php echo ($this->main_model->getSatuProdi($this->session->id_prodi)->row()->nama_prodi)?><br>
-  <?php
-    switch($this->session->level){
-    case 1:
-      ?>Admin<?php
-      break;
-    case 2:
-      ?>Dosen<?php
-      break;
-    case 3:
-      ?>Mahasiswa<?php
-      break;
-    default:
-      ?><?php
-      break;
-    }
-  ?>
-</b>
 <div class="input-group mb-3" style="padding-top: 20px;">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
@@ -66,7 +61,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          <i class="far fa-chart-bar"></i></i><span>Jadwal Mahasiswa</span>
+          <i class="fa fa-calendar"></i></i><span>Jadwal Mahasiswa</span>
         </a>
       </h4>
     </div>
@@ -83,7 +78,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          <i class="far fa-chart-bar"></i></i><span>Materi & Tugas</span>
+          <i class="fa fa-book"></i></i><span>Materi & Tugas</span>
         </a>
       </h4>
     </div>
@@ -100,7 +95,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" href="<?php echo base_url()?>index.php/main_controller/view_mhs_nilai">
-          <i class="far fa-user"></i><span>Nilai</span>
+          <i class="fa fa-bar-chart"></i><span>Nilai</span>
         </a>
       </h4>
     </div>
@@ -111,7 +106,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" href="<?php echo base_url()?>index.php/main_controller/view_mhs_kehadiran">
-          <i class="far fa-user"></i><span>Kehadiran</span>
+          <i class="fa fa-check-square-o"></i><span>Kehadiran</span>
         </a>
       </h4>
     </div>
@@ -123,7 +118,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" href="<?php echo base_url()?>index.php/main_controller/view_all_judul_kuisioner_mhs">
-          <i class="far fa-user"></i><span>Kuisioner</span>
+          <i class="fa fa-clipboard"></i><span>Kuisioner</span>
         </a>
       </h4>
     </div>
@@ -134,7 +129,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" href="<?php echo base_url()?>index.php/main_controller/view_mhs_statuspembayaran">
-          <i class="far fa-user"></i><span>Pembayaran</span>
+          <i class="fa fa-money"></i><span>Pembayaran</span>
         </a>
       </h4>
     </div>
@@ -145,7 +140,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          <i class="far fa-chart-bar"></i></i><span>Registrasi</span>
+          <i class="far fa-plus-square"></i></i><span>Registrasi</span>
         </a>
       </h4>
     </div>
@@ -164,7 +159,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
           <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-          <i class="far fa-chart-bar"></i></i><span>Akun</span>
+          <i class="far fa-user"></i></i><span>Akun</span>
         </a>
       </h4>
     </div>

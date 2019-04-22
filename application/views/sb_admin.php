@@ -29,8 +29,6 @@
     </div>
   </div>
 </div>
-
-
 <br>
 
 <div class="input-group mb-3" style="padding-top: 20px;">
@@ -327,17 +325,6 @@
           }
         ?>
           <i class="fa fa-database"></i><span>Database</span>
-        </a>
-      </h4>
-    </div>
-  </div>
-</div>
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="" href="<?php echo base_url()?>index.php/main_controller/logout">
-          <i class="fas fa-sign-out-alt"></i><span>Logout</span>
         </a>
       </h4>
     </div>
