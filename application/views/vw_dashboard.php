@@ -12,7 +12,8 @@
   <header class="main-header">
     <a href="<?php echo base_url()?>index.php/main_controller/dashboard" class="logo">
       <!-- <span class="logo-mini"><b>U</b>NV</span> -->
-      <span class="logo-lg"><b>SIAKAD</b> UNIV 1.0</span>
+      <span class="logo-lg"> <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+ <b>SIAKAD</b> UNIV 1.0</span>
     </a>
     <nav class="navbar navbar-static-top">
       <div class="navbar-custom-menu">
