@@ -29,7 +29,7 @@
             <table id="example2" class="table  table-striped  table-hover">
               <thead>
               <tr>
-                <th>NO</th>
+                <th>#</th>
                 <th>NIM</th>
                 <th>NAMA</th>
                 <th>ANGKATAN</th>                                 
@@ -62,7 +62,7 @@
               <?php endforeach; ?>
               <tfoot>
               <tr>
-                <th>NO</th>
+                <th>#</th>
                 <th>NIM</th>
                 <th>NAMA</th>
                 <th>ANGKATAN</th>                                 
@@ -90,26 +90,26 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              
               <h4 class="modal-title" id="myModalLabel">Tambah Mahasiswa Baru</h4>
             </div>
             <div class="modal-body">
             <?php echo form_open("main_controller/MHS_addNew"); ?>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">NIM</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nim" placeholder="Nomor Induk Mahasiswa" required>
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Lengkap</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Mahasiswa" required>
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Angkatan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="angkatan">
@@ -120,14 +120,14 @@
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Alamat</label>
                 <div class="col-md-9">
                   <textarea class="form-control" rows="3" name="alamat" placeholder="Alamat Lengkap"></textarea>
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Gender</label>
                 <div class="col-md-9">
                   <div class="radio">
@@ -143,7 +143,7 @@
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Agama</label>
                 <div class="col-md-9">
                   <select class="form-control" name="agama">
@@ -156,42 +156,42 @@
                 </div>
               </div> 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tanggal Lahir</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tgl_lahir" placeholder="dd/mm/yyyy" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tempat Lahir</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tmpt_lahir" placeholder="Tempat Lahir Mahasiswa" required>
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Ayah</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_ayah" placeholder="Nama Ayah Mahasiswa" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Ibu</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_ibu" placeholder="Nama Ibu Mahasiswa" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nomor Telfon Orang Tua </label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="no_telp" placeholder="Nomor Telfon Orang Tua" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">ID Pekerjaan Ibu</label>
                 <div class="col-md-9">
                   <select class="form-control" name="ID_p_ibu">
@@ -211,7 +211,7 @@
                   </select>
                 </div>
               </div> 
-               <div class="form-group">
+               <div class="form-row">
                 <label for="" class="col-md-3">ID Pekerjaan Bapak</label>
                 <div class="col-md-9">
                   <select class="form-control" name="ID_p_bpk">
@@ -232,21 +232,21 @@
                 </div>
               </div> 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Alamat Ayah</label>
                 <div class="col-md-9">
                   <textarea class="form-control" rows="3" name="alamat_ayah" placeholder="Alamat Lengkap"></textarea>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Alamat Ibu</label>
                 <div class="col-md-9">
                   <textarea class="form-control" rows="3" name="alamat_ibu" placeholder="Alamat Lengkap"></textarea>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Penghasilan Ayah</label>
                 <div class="col-md-9">
                   <select class="form-control" name="hasil_ayah">
@@ -258,7 +258,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Penghasilan Ibu</label>
                 <div class="col-md-9">
                   <select class="form-control" name="hasil_ibu">
@@ -270,28 +270,28 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Sekolah</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_sekolah" placeholder="Nama Sekolah" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nomor Telfon Sekolah</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="notelp_sekolah" placeholder="Nomor Telfon Sekolah" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Alamat Sekolah</label>
                 <div class="col-md-9">
                   <textarea class="form-control" rows="3" name="alamat_sekolah" placeholder="Alamat Sekolah"></textarea>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jurusan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="jurusan">
@@ -302,28 +302,28 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Lulus</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tahunlulus" placeholder="Tahun Lulus" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Fakultas</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="fakultas" placeholder="Fakultas" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Program Studi</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="programstudi" placeholder="Program Studi" required>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Semester Aktif</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="semester_aktif" placeholder="Semester Aktif" required>
@@ -332,8 +332,9 @@
 
             </div>
             <div class="modal-footer">
-              <input type="submit" class="btn btn-Warning" name="addnew" value="Submit"></input>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
+              
             </div>
             <?php echo form_close(); ?>               
             </div>

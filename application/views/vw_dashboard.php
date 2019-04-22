@@ -8,8 +8,7 @@
 <head>
   <?php $this->load->view('included');?>
 </head>
-<body class="skin-blue">
-<div class="wrapper">
+<body>
   <header class="main-header">
     <a href="<?php echo base_url()?>index.php/main_controller/dashboard" class="logo">
       <!-- <span class="logo-mini"><b>U</b>NV</span> -->
@@ -17,13 +16,7 @@
     </a>
     <nav class="navbar navbar-static-top">
       <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span id="date_time"></span>
-              <script type="text/javascript">window.onload = date_time('date_time');</script>
-            </a>
-          </li>
+        <ul class="nav navbar-nav" style="margin-left: 1400px;">
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <?php
@@ -51,7 +44,7 @@
             ?>
               <img src="<?php echo base_url().'/source/dp.png'?>" class="user-image" alt="User Image">
             <?php
-          }?>
+            }?>
                 <?php
                 }?>
               <span class="hidden-xs"><?php echo $this->session->display_name; ?></span>
@@ -156,7 +149,20 @@
       </div>
     </nav>
   </header>
-  <?php $this->load->view($main_sidebar);?>
-</div>
+  <div class="" style="margin-top:20px;">
+    <div class="row">
+      <div class="col-2" style="padding-left:40px; border-right: 1px solid #ddd">
+        <?php $this->load->view($main_sidebar);?>
+      </div>
+      <div class="col-10" style="padding-right:50px; padding-left:30px;">
+        <?php $this->load->view($main_content);?>
+      </div>
+    </div>
+  </div>
+  <!-- <footer class="main-footer">
+    <b>Version</b> 1.0.0
+    <strong>Copyright &copy; 2019 <a href="">UNIVERSITY</a>.</strong> All rights
+    reserved.
+  </footer> -->
 </body>
 </html>

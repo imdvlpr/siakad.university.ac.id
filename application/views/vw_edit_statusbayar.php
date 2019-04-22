@@ -30,14 +30,14 @@
 
               <input type="hidden" class="form-control" name="id_transaksi" value="<?php echo $pembayaran->row()->id_transaksi; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Akademik</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="id_tahun_akademik" value="<?php echo $pembayaran->row()->id_tahun_akademik; ?>" readonly>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">NIM</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nim" value="<?php echo $pembayaran->row()->nim; ?>" readonly>
@@ -48,7 +48,7 @@
 
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Status</label>
                 <div class="col-md-9">
                   <select class="form-control" name="status">
@@ -66,7 +66,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tanggal</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tanggal" value="<?php echo $pembayaran->row()->tanggal; ?>" readonly>
@@ -78,7 +78,7 @@
 
 
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
 
             <?php echo form_close(); ?>

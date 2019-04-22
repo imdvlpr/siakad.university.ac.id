@@ -25,7 +25,7 @@
 
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <label class="col-sm-1 from-control-label">Tahun Akademik</label><p>: <?php echo (substr($kuisioner->row()->keterangan, 0,4)); echo "-"; echo substr($kuisioner->row()->keterangan, -1);?></p>
                       <label class="col-sm-1 from-control-label">Judul</label><p>: <?php echo $kuisioner->row()->judul;?></p>
                     </div>
@@ -38,7 +38,7 @@
 
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <label class="col-sm-1 from-control-label">Tahun Akademik</label><p>: <?php echo (substr($kuisioner->row()->keterangan, 0,4)); echo "-"; echo substr($kuisioner->row()->keterangan, -1);?></p>
                       <label class="col-sm-1 from-control-label">Mata Kuliah</label><p>: <?php echo $kuisioner->row()->nama_mk;?></p>
                       <label class="col-sm-1 from-control-label">NIDN</label><p>: <?php echo $kuisioner->row()->nidn;?></p>
@@ -53,7 +53,7 @@
 
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <?php
                         $jumlah_koresponden = ($kuisioner->num_rows() / $pertanyaan_kuisioner->num_rows());
                       ?>
@@ -72,7 +72,7 @@
                       <table class="table table-bordered" id="">
                         <thead>
                         <tr>
-                          <th style="width: 13px">No</th>
+                          <th style="width: 13px">#</th>
                           <th style="width: 15px">Pertanyaan</th>
                           <th style="width: 13px"><center>Sangat Setuju</center></th>
                           <th style="width: 13px"><center>Setuju</center></th>

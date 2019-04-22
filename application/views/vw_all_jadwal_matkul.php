@@ -30,7 +30,7 @@
                   </div>
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <label class="col-sm-1 from-control-label">Tahun Akademik</label><p>: <?php echo (substr($jadwal_master->row()->keterangan, 0,4)); echo "-"; echo substr($jadwal_master->row()->keterangan, -1);?></p>
                       <label class="col-sm-1 from-control-label">Program Studi</label><p>: <?php echo ($jadwal_master->row()->nama_prodi); ?></p>
                       <label class="col-sm-1 from-control-label">Mata Kuliah</label><p>: <?php echo ($jadwal_master->row()->nama_mk); ?></p>
@@ -98,7 +98,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              
               <h4 class="modal-title" id="myModalLabel">Tambah Jadwal Baru</h4>
             </div>
             <div class="modal-body">
@@ -106,7 +106,7 @@
 
               <input type="hidden" class="form-control" name="id_jadwal_master" value="<?php echo $jadwal_master->row()->id_jadwal_master; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Hari</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_hari">
@@ -117,7 +117,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jam Mulai</label>
                 <div class="col-md-9">
                   <select class="form-control" name="jam_mulai">
@@ -128,7 +128,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jam Akhir</label>
                 <div class="col-md-9">
                   <select class="form-control" name="jam_selesai">
@@ -140,7 +140,7 @@
               </div>
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Gedung</label>
                 <div class="col-md-9">
                   <select class="form-control" name="gedung_id" id="gedung">
@@ -152,7 +152,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Ruangan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="ruangan_id" id="ruangan_id">
@@ -161,8 +161,9 @@
                 </div>
               </div>
 
-              <input type="submit" class="btn btn-Warning" name="addnew" value="Submit"></input>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
+              
             </div>
             <div class="modal-footer">
             </div>
@@ -178,7 +179,7 @@
      <div class="modal-dialog">
       <div class="modal-content">
        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        
         <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
        </div>
        <div class="modal-body">
@@ -196,7 +197,7 @@
         </div>
        </div>
        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
        </div>
       </div>
      </div>

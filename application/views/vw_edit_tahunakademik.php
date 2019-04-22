@@ -29,7 +29,7 @@
             <?php echo form_open("main_controller/TahunAkademik_update"); ?>
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Akademik</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="" placeholder="" value="<?php echo substr($tahun_akademik->row()->keterangan, 0,4) ?>" readonly>
@@ -37,7 +37,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Keterangan</label>
                 <div class="col-md-9">
                   <?php
@@ -50,14 +50,14 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Batas Registrasi</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="bts_regis" placeholder="" id="datepicker" value="<?php echo $tahun_akademik->row()->batas_registrasi; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Status</label>
                 <div class="col-md-9">
                   <div class="radio">
@@ -76,7 +76,7 @@
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

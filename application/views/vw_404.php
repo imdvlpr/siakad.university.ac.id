@@ -1,23 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="float-left">
+        <h6>DASHBOARDS</h6>
+        <h2>Error 404</h2>
+      </div>
+    </div>
+    <div class="col">
+      <div class="float-right">
+        <div class="input-group mb-3" style="padding-top: 20px;">
+          <div class="input-group-prepend">
+            
+          </div>
+          <span id="date_time"></span>
+<script type="text/javascript">window.onload = date_time('date_time');</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        404 Error Page
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">404 error</li>
-      </ol>
-    </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="error-page">
-        <h2 class="headline text-yellow"> 404</h2>
 
         <div class="error-content">
-          <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+          <h3><i class="fa fa-warning text-yellow"></i>Oops! Page not found.</h3>
 
           <p>
             We could not find the page you were looking for.
@@ -29,7 +40,7 @@
               <input type="text" name="search" class="form-control" placeholder="Search">
 
               <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
+                <button type="submit" name="submit" class="btn btn-success btn-flat"><i class="fa fa-search"></i>
                 </button>
               </div>
             </div>

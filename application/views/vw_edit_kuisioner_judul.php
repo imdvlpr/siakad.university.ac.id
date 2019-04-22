@@ -30,7 +30,7 @@
                   
               <input type="hidden" class="form-control" name="id_kuisioner_judul" value="<?php echo $kuisioner_judul->row()->id_kuisioner_judul; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Akademik</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_tahun_akademik">
@@ -42,7 +42,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tipe</label>
                 <div class="col-md-9">
                   <select class="form-control" name="tipe">
@@ -57,14 +57,14 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Judul Kuisioner</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="judul_kuisioner" placeholder="Judul Kuisioner" value="<?php echo $kuisioner_judul->row()->judul ?>" required>
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

@@ -148,7 +148,7 @@ table td{
       <table class="tabelksm" border="1px" style="width: 100%;">
         <thead>
           <tr style="height: 30px">
-            <th rowspan="2">No</th>
+            <th rowspan="2">#</th>
             <th rowspan="2">Mata Kuliah</th>
             <th colspan="4">UTS</th>
           </tr>
@@ -192,7 +192,7 @@ table td{
       <table class="tabelksm" border="1px" style="width: 100%; margin-top:20px;">
         <thead>
           <tr style="height: 30px">
-            <th rowspan="2">No</th>
+            <th rowspan="2">#</th>
             <th rowspan="2">Mata Kuliah</th>
             <th colspan="4">UAS</th>
           </tr>

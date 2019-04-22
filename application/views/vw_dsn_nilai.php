@@ -1,5 +1,24 @@
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="float-left">
+        <h6>DOSEN</h6>
+        <h2>Nilai</h2>
+      </div>
+    </div>
+    <div class="col">
+      <div class="float-right">
+        <div class="input-group mb-3" style="padding-top: 20px;">
+        <div class="input-group-prepend">
+
+        </div>
+        <span id="date_time"></span>
+      <script type="text/javascript">window.onload = date_time('date_time');</script>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="content-header">
       <div style="text-align: right; font-size: 12.5px;">
          <a href="#" data-toggle="modal" name="login" data-target="#help_modal"><i style="color: black">Bantuan </i><i class="fa fa-question-circle"></i></a>
@@ -10,12 +29,12 @@
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  
                   <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
                </div>
                <div class="modal-body">
                   <div>
-                    <p align="justify">Pada halaman ini, anda dapat menginput nilai mahasiswa. Nilai yang diinputkan berupa nilai akhir(Indeks NIlai). Anda hanya dapat menginput nilai hanya pada mahasiswa yang anda ajar. Klik <b>Ubah Nilai</b> pada kolom "operasi". kemudian isi nilai mahasiswa.
+                     <p align="justify">Pada halaman ini, anda dapat menginput nilai mahasiswa. Nilai yang diinputkan berupa nilai akhir(Indeks NIlai). Anda hanya dapat menginput nilai hanya pada mahasiswa yang anda ajar. Klik <b>Ubah Nilai</b> pada kolom "operasi". kemudian isi nilai mahasiswa.
                     <br></br>
                     <br><font style="color: red">Perhatian!</font></br>
                     <br>Nilai yang diinputkan akan dikelola oleh bagian administrasi, hal ini bertujuan untuk menghindari kecurangan penginputan nilai.</br>
@@ -23,37 +42,21 @@
                   </div>
                </div>
                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  
                </div>
             </div>
          </div>
+      </div> 
+    </section> 
+<hr>
+<div class="col">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4 class="title-content">Daftar Kelas</h4>
       </div>
-
-    <section class="content-header">
-      <h1>
-        NIlai
-        <small>Preview</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-tachometer"></i>Dashboard</a></li>
-        <li class="active"> Nilai</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-
-    <section class="content">
-          <div class="container-fluid">
-            <div class="row">
-            <!-- left colum -->
-
-            <div class="col-xs-20">
-                <div class="box box-primary">
-                  <div class="box-header with-border">
-                    <h3 class="box-title">Daftar Kelas</h3>
-                  </div>
-                <!-- /.box-header -->
-                  <div class="box-body">
+    </div>
+  </div>
                     <table id="tabelkeren" class="table  table-striped  table-hover">
                       <thead>
                       <tr>
@@ -91,9 +94,8 @@
                       </tr>
                       </tfoot>
                     </table>
-                  </div>
-              </div>
-            </div>
-          </div>
-    </section>
+  </table>
 </div>
+
+
+

@@ -26,15 +26,15 @@
             <!-- form start -->
             <form role="form">
               <div class="box-body">
-                <div class="form-group">
+                <div class="form-row">
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label for="exampleInputFile">File input</label>
                   <input type="file" id="exampleInputFile">
 
@@ -168,7 +168,7 @@
 
               <div class="input-group input-group-lg">
                 <div class="input-group-btn">
-                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Action
+                  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Action
                     <span class="fa fa-caret-down"></span></button>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
@@ -219,21 +219,21 @@
             <!-- form start -->
             <form class="form-horizontal">
               <div class="box-body">
-                <div class="form-group">
+                <div class="form-row">
                   <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
                   <div class="col-sm-10">
                     <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
 
                   <div class="col-sm-10">
                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <div class="col-sm-offset-2 col-sm-10">
                     <div class="checkbox">
                       <label>
@@ -261,38 +261,38 @@
             <div class="box-body">
               <form role="form">
                 <!-- text input -->
-                <div class="form-group">
+                <div class="form-row">
                   <label>Text</label>
                   <input type="text" class="form-control" placeholder="Enter ...">
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label>Text Disabled</label>
                   <input type="text" class="form-control" placeholder="Enter ..." disabled>
                 </div>
 
                 <!-- textarea -->
-                <div class="form-group">
+                <div class="form-row">
                   <label>Textarea</label>
                   <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label>Textarea Disabled</label>
                   <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
                 </div>
 
                 <!-- input states -->
-                <div class="form-group has-success">
+                <div class="form-row has-success">
                   <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>
                   <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
                   <span class="help-block">Help block with success</span>
                 </div>
-                <div class="form-group has-warning">
+                <div class="form-row has-warning">
                   <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Input with
                     warning</label>
                   <input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
                   <span class="help-block">Help block with warning</span>
                 </div>
-                <div class="form-group has-error">
+                <div class="form-row has-error">
                   <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Input with
                     error</label>
                   <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
@@ -300,7 +300,7 @@
                 </div>
 
                 <!-- checkbox -->
-                <div class="form-group">
+                <div class="form-row">
                   <div class="checkbox">
                     <label>
                       <input type="checkbox">
@@ -324,7 +324,7 @@
                 </div>
 
                 <!-- radio -->
-                <div class="form-group">
+                <div class="form-row">
                   <div class="radio">
                     <label>
                       <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -346,7 +346,7 @@
                 </div>
 
                 <!-- select -->
-                <div class="form-group">
+                <div class="form-row">
                   <label>Select</label>
                   <select class="form-control">
                     <option>option 1</option>
@@ -356,7 +356,7 @@
                     <option>option 5</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label>Select Disabled</label>
                   <select class="form-control" disabled>
                     <option>option 1</option>
@@ -368,7 +368,7 @@
                 </div>
 
                 <!-- Select multiple-->
-                <div class="form-group">
+                <div class="form-row">
                   <label>Select Multiple</label>
                   <select multiple class="form-control">
                     <option>option 1</option>
@@ -378,7 +378,7 @@
                     <option>option 5</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                   <label>Select Multiple Disabled</label>
                   <select multiple class="form-control" disabled>
                     <option>option 1</option>

@@ -30,14 +30,14 @@
 
               <input type="hidden" class="form-control" name="id_prodi" placeholder="ID Program Studi" value="<?php echo $prodi->row()->id_prodi; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Program Studi</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_prodi" placeholder="Nama Program Studi" value="<?php echo $prodi->row()->nama_prodi; ?>">
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

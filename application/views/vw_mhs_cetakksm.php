@@ -22,21 +22,21 @@
 
                         <form class="form-horizontal">
                             <div class="box-body">
-                                <div class="form-group">
+                                <div class="form-row">
                                     <label class="col-sm-3 from-control-label">NIM</label>
                                     <p>: 1301154400</p>
                                     <div class="col-sm-5">
                                     </div>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-row">
                                     <label class="col-sm-3 from-control-label">Nama Lengkap</label>
                                     <p>: Zakki Farhan</p>
                                     <div class="col-sm-5">
                                     </div>
                                 </div>
 
-                                <div class="form-group">  
+                                <div class="form-row">  
                                     <label class="col-sm-3 from-control-label">Kelas</label>
                                     <p>: IF39-11</p>
                                     <div class="col-sm-5">

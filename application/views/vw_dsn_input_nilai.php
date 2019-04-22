@@ -29,7 +29,7 @@
 
                   <form class="form-horizontal">
                     <div class="box-body">
-                      <div class="form-group">
+                      <div class="form-row">
                         <label class="col-sm-1 from-control-label">Tahun Akademik</label><p>: <?php echo (substr($mhs->row()->keterangan, 0,4)); echo "-"; echo substr($mhs->row()->keterangan, -1);?></p>
                         <label class="col-sm-1 from-control-label">Kode Mata Kuliah</label><p>: <?php echo ($mhs->row()->kode_mk); ?></p>
                         <label class="col-sm-1 from-control-label">Nama Mata Kuliah</label><p>: <?php echo ($mhs->row()->nama_mk); ?></p>
@@ -49,7 +49,7 @@
                         <table id='tabelkeren' class="table table-bordered" id="tabelkeren">
                           <thead>
                           <tr>
-                            <th id='s' style="width: 13px ">No</th>
+                            <th id='s' style="width: 13px ">#</th>
                             <th style="width: 15px">NIM</th>
                             <th style="width: 350px">Nama Mahasiswa</th>
                             <th id='s' style="width: 15px"><center>A</center></th>

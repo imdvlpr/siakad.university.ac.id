@@ -22,7 +22,7 @@
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  
                   <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
                </div>
                <div class="modal-body">
@@ -31,7 +31,7 @@
                   </div>
                </div>
                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  
                </div>
             </div>
          </div>
@@ -124,29 +124,29 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              
               <h4 class="modal-title" id="myModalLabel">Tambah Dosen Baru</h4>
             </div>
             <div class="modal-body">
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Mitra</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="" placeholder="Nama Mitra" required>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Alamat</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="" placeholder="Alamat" required>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Kuota</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="" placeholder="Kuota" required>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Penanggung Jawab</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="" placeholder="Penanggung Jawab" required>
@@ -154,8 +154,9 @@
               </div>
 
             <div class="modal-footer">
-              <input type="submit" class="btn btn-Warning" name="addnew" value="Submit"></input>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
+              
             </div>
             </div>
           </div>

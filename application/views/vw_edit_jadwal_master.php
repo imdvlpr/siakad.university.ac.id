@@ -31,7 +31,7 @@
 
               <input type="hidden" class="form-control" name="id_jadwal_master" value="<?php echo $jadwal->row()->id_jadwal_master; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Akademik</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="id_tahun_akademik"  value="<?php echo (substr($jadwal->row()->keterangan, 0,4)); echo "-"; echo substr($jadwal->row()->keterangan, -1);?>" readonly>
@@ -39,7 +39,7 @@
               </div>
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Program Studi</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_prodi" id="prodi">
@@ -51,7 +51,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Kelas</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_kelas" id="kelas">
@@ -61,7 +61,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Mata Kuliah</label>
                 <div class="col-md-9">
                   <select class="form-control" name="kode_mk" id="matkul">
@@ -71,7 +71,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">NIDN</label>
                 <div class="col-md-9">
                   <select class="form-control" name="nidn" id="dosen">
@@ -81,7 +81,7 @@
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

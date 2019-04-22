@@ -17,42 +17,42 @@
         <form class="form-horizontal">
         <div class="box-body">
 
-            <div class="form-group">
+            <div class="form-row">
                   <label class="col-sm-3 from-control-label">Mata Kuliah</label>
                     <div  class="col-sm-2">
-                      <select class= "form-control" > 
-                        <option>- Pilih -</option>                     
+                      <select class= "form-control" >
+                        <option>- Pilih -</option>
                         <option>Tata Tulis</option>
                         <option>Teori</option>
                         <option>Bahasa</option>
                         <option>Sastra</option>
                       </select>
                     </div>
-                </div>  
+                </div>
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Kelas</label>
                     <div  class="col-sm-2">
                       <select class= "form-control" >
                         <option>- Pilih -</option>
                         <option>IF39-11</option>
-                        <option>IF39-12</option>                        
+                        <option>IF39-12</option>
                       </select>
                     </div>
-                </div> 
+                </div>
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Waktu</label>
                     <div  class="col-sm-2">
                       <select class= "form-control" >
                         <option>- Pilih - </option>
                         <option>08.00-10.00</option>
-                        <option>10.00-11.00</option>                        
+                        <option>10.00-11.00</option>
                       </select>
                     </div>
-                </div> 
+                </div>
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Hari</label>
                     <div  class="col-sm-2">
                       <select class= "form-control" >
@@ -65,10 +65,10 @@
                         <option>Sabtu</option>
                       </select>
                     </div>
-                </div> 
-          </div>       
-        <!-- /.box-body -->   
-        </form>     
+                </div>
+          </div>
+        <!-- /.box-body -->
+        </form>
       </div>
       <!-- AKHIR MATA KULIAH TERSEDIA -->
 
@@ -78,12 +78,12 @@
         <!-- /.box-header -->
           <div class="box-body">
             <div style="padding-left: 10px">
-            
+
             <form>
             <table class="table table-bordered" id="">
               <thead>
               <tr>
-                <th style="width: 13px">No</th>
+                <th style="width: 13px">#</th>
                 <th style="width: 15px">NIM</th>
                 <th style=" width: 350px">Nama Mahasiswa</th>
                 <th style="width: 150px">Kelas</th>
@@ -153,7 +153,7 @@
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             </div>
-          </div>        
+          </div>
         <!-- /.box-body -->
       </div>
     <!-- AKHIR MATA KULIAH DIPILIH -->

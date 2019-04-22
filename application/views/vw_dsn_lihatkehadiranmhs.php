@@ -21,19 +21,19 @@
 
             <form class="form-horizontal">
               <div class="box-body">
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">NIDN</label>
                   <div class="col-sm-5">: 1301549654
                   </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Nama Lengkap</label>
                   <div class="col-sm-5">: Fazrian Ramadlan
                   </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Mata Kuliah</label>
                     <div  class="col-sm-3">
                       <select class= "form-control" > 
@@ -46,7 +46,7 @@
                     </div>
                 </div>    
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Kelas</label>
                     <div  class="col-sm-3">
                       <select class= "form-control" >
@@ -58,7 +58,7 @@
                 </div> 
  
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Hari</label>
                     <div  class="col-sm-3">
                       <select class= "form-control" >
@@ -88,7 +88,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
+                  <th>#</th>
                   <th>Nim</th>
                   <th>Nama</th>
                   <th>Mata Kuliah</th> 

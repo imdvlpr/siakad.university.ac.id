@@ -30,21 +30,21 @@
 
               <input type="hidden" class="form-control" name="id_biaya" value="<?php echo $biaya->row()->id_biaya; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Akademik</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="id_tahun_akademik" value="<?php echo $biaya->row()->keterangan; ?>" readonly>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Program Studi</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="prodi" value="<?php echo $biaya->row()->nama_prodi; ?>" readonly>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jenis Pembayaran</label>
                 <div class="col-md-9">
                   <?php if ($biaya->row()->jenis_pembayaran == 1) {
@@ -57,14 +57,14 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jumlah Biaya</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="jumlah_biaya" placeholder="Biaya" value="<?php echo $biaya->row()->jumlah_biaya; ?>" required>
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

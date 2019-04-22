@@ -326,7 +326,7 @@
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
             <a href="../calendar.html" class="nav-link">
-              <i class="nav-icon fa fa-calendar"></i>
+              <i class="nav-icon "></i>
               <p>
                 Calendar
                 <span class="badge badge-info right">2</span>
@@ -508,7 +508,7 @@
               <input type="text" name="search" class="form-control" placeholder="Search">
 
               <div class="input-group-append">
-                <button type="submit" name="submit" class="btn btn-warning"><i class="fa fa-search"></i>
+                <button type="submit" name="submit" class="btn btn-success"><i class="fa fa-search"></i>
                 </button>
               </div>
             </div>

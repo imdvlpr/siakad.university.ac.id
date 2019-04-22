@@ -77,7 +77,7 @@
             }
           ?>
           <a href="<?php echo base_url()?>index.php/main_controller/view_dsn_jadwaldosen">
-            <i class="fa fa-calendar"></i>
+            <i class=""></i>
             <span>Jadwal & Kehadiran</span>
           </a>
 

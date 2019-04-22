@@ -30,14 +30,14 @@
                   
               <input type="hidden" class="form-control" name="gedung_id" placeholder="ID Gedung" value="<?php echo $gedung->row()->gedung_id; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Gedung</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_gedung" placeholder="Nama Gedung" value="<?php echo $gedung->row()->nama_gedung; ?>">
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

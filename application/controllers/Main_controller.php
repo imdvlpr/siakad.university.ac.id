@@ -12,7 +12,19 @@
 			$this->load->view('vw_login');
 		}
 		public function error_page(){
-			$this->load->view('vw_alert_404');
+			if ($this->session->level == 1){
+				$data['main_sidebar'] = 'sb_admin';
+				$data['main_content'] = 'vw_404';
+				$this->load->view('vw_dashboard',$data);
+			}else if($this->session->level == 2){
+				$data['main_sidebar'] = 'sb_dsn';
+				$data['main_content'] = 'vw_404';
+				$this->load->view('vw_dashboard',$data);
+			}else if($this->session->level == 3){
+				$data['main_sidebar'] = 'sb_mhs';
+				$data['main_content'] = 'vw_404';
+				$this->load->view('vw_dashboard',$data);
+			}
 		}
 		public function dashboard(){
 			if ($this->session->level == 1){
@@ -1260,11 +1272,11 @@
 	    }
 	    public function view_mhs_jadwalujian(){
 	    	if ($this->session->level == 3) {
+					$data['status_regis_mhs'] = $this->main_model->getStatusRegisMhs($this->session->kode_user);
 	    		$kuisioner_isFilled = $this->main_model->kuisioner_mhs_isFilled($this->session->kode_user);
 	    		if($kuisioner_isFilled == TRUE){
 	    			$data['jadwalmhs'] = $this->main_model->getJadwal_ujian_Mhs();
-					$data['status_bayar_mhs'] = $this->main_model->getStatusPembayaranMhs($this->session->kode_user);
-
+						$data['status_bayar_mhs'] = $this->main_model->getStatusPembayaranMhs($this->session->kode_user);
 		    		$data['main_sidebar'] = 'sb_mhs';
 		    		$data['main_content'] = 'vw_mhs_jadwalujian';
 	    			$this->load->view('vw_dashboard',$data);
@@ -2677,23 +2689,21 @@
 					$data = $this->input->post(null,TRUE);
 	        $query = $this->main_model->addNewEvent($data);
 	        if($query){
-	        	echo "<script> alert('Kegiatan berhasil ditambahkan.');</script>";
-		    		redirect('main_controller/dashboard','refresh');
+	        	$this->session->set_flashdata('success', 'Data kegiatan berhasil ditambahkan');
 		  		}else{
-		  			echo "<script>alert('Kegiatan gagal ditambahkan.');</script>";
-			    	redirect('main_controller/dashboard','refresh');
+		  			$this->session->set_flashdata('success', 'Data kegiatan gagal ditambahkan');
 		  		}
+					redirect('main_controller/dashboard');
 			}
 			public function del_event($id)
 			{
 				$query = $this->main_model->eventDelete($id);
 				if($query){
-					echo "<script> alert('Kegiatan berhasil dihapus.');</script>";
-					redirect('main_controller/dashboard','refresh');
+					$this->session->set_flashdata('danger', 'Data kegiatan berhasil dihapus');
 				}else{
-					echo "<script>alert('Kegiatan gagal dihapus.');</script>";
-					redirect('main_controller/dashboard','refresh');
+					$this->session->set_flashdata('danger', 'Data kegiatan gagal dihapus');
 				}
+				redirect('main_controller/dashboard');
 			}
 			public function del_materi($id){
 				$query = $this->main_model->materiDelete($id);

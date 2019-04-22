@@ -273,7 +273,7 @@
         <form method="post">
           <h3 class="control-sidebar-heading">General Settings</h3>
 
-          <div class="form-group">
+          <div class="form-row">
             <label class="control-sidebar-subheading">
               Report panel usage
               <input type="checkbox" class="pull-right" checked>
@@ -283,9 +283,9 @@
               Some information about this general settings option
             </p>
           </div>
-          <!-- /.form-group -->
+          <!-- /.form-row -->
 
-          <div class="form-group">
+          <div class="form-row">
             <label class="control-sidebar-subheading">
               Allow mail redirect
               <input type="checkbox" class="pull-right" checked>
@@ -295,9 +295,9 @@
               Other sets of options are available
             </p>
           </div>
-          <!-- /.form-group -->
+          <!-- /.form-row -->
 
-          <div class="form-group">
+          <div class="form-row">
             <label class="control-sidebar-subheading">
               Expose author name in posts
               <input type="checkbox" class="pull-right" checked>
@@ -307,33 +307,33 @@
               Allow the user to show his name in blog posts
             </p>
           </div>
-          <!-- /.form-group -->
+          <!-- /.form-row -->
 
           <h3 class="control-sidebar-heading">Chat Settings</h3>
 
-          <div class="form-group">
+          <div class="form-row">
             <label class="control-sidebar-subheading">
               Show me as online
               <input type="checkbox" class="pull-right" checked>
             </label>
           </div>
-          <!-- /.form-group -->
+          <!-- /.form-row -->
 
-          <div class="form-group">
+          <div class="form-row">
             <label class="control-sidebar-subheading">
               Turn off notifications
               <input type="checkbox" class="pull-right">
             </label>
           </div>
-          <!-- /.form-group -->
+          <!-- /.form-row -->
 
-          <div class="form-group">
+          <div class="form-row">
             <label class="control-sidebar-subheading">
               Delete chat history
               <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
             </label>
           </div>
-          <!-- /.form-group -->
+          <!-- /.form-row -->
         </form>
       </div>
       <!-- /.tab-pane -->

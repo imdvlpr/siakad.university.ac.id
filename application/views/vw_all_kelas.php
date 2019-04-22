@@ -1,100 +1,82 @@
-
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-  <section class="content-header">
-    <div style="font-size: 13.5px; text-align: right;">
-      <a href="#" data-toggle="modal" name="login" data-target="#help_modal"><i style="color: black">Bantuan </i><i class="fa fa-question-circle"></i></a>
-    </div>
-    <h1>
-      Data Tables
-      <small>advanced tables</small>
-    </h1>
-    <ol class="breadcrumb" style="margin-top: 20px">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li><a href="#">Tables</a></li>
-      <li class="active">Data tables</li>
-    </ol>
-  </section>
-
-  <!-- Main content -->
-  <section class="content">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="box">
-          <div class="box-header">
-            <h3 class="box-title">Tabel Kelas</h3>
-            <input type="submit" style="margin-left: 10px; float:right" href="#" data-toggle="modal" class="btn btn-success" name="login" data-target="#myModal" value="+">
-          </div>
-          <!-- /.box-header -->
-
-
-          <div class="box-body">
-            <table id="tabelkeren" class="table  table-striped  table-hover">
-              <thead>
-              <tr>
-                <th>NAMA KELAS</th>
-                <th>PROGRAM STUDI</th>
-                <th>JUMLAH MAHASISWA</th>
-                <th>KUOTA</th>
-              </tr>
-              </thead>
-              <tbody>
-              <?php $i = 0; ?>
-              <?php foreach($kelas->result() as $data):?>
-              <?php
-                  $i += 1;
-                  $jml = $this->db->query('SELECT * FROM app_kelas_mhs WHERE id_kelas='.$data->id_kelas);
-              ?>
-
-              <tr>
-
-                <td><?php echo ($data->nama_kelas); ?></td>
-                <td><?php echo ($data->nama_prodi); ?></td>
-                <td><?php echo ($jml->num_rows()); ?></td>
-                <td><?php echo ($data->kuota); ?></td>
-                <td>
-                </td>
-              </tr>
-              <?php endforeach; ?>
-              </tbody>
-
-              <tfoot>
-              <tr>
-
-                <th>NAMA KELAS</th>
-                <th>PROGRAM STUDI</th>
-                <th>JUMLAH MAHASISWA</th>
-                <th>KUOTA</th>
-              </tr>
-              </tfoot>
-            </table>
-          </div>
-          <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
-        <!-- /.box -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="float-left">
+        <h6>DASHBOARDS</h6>
+        <h2>Master Data</h2>
       </div>
-      <!-- /.col -->
     </div>
-    <!-- /.row -->
-  </section>
-
-<script type="text/javascript">
-
-</script>
-
-  <section class="content-popup">
+    <div class="col">
+      <div class="float-right">
+        <div class="input-group mb-3" style="padding-top: 20px;">
+  <div class="input-group-prepend">
+    
+  </div>
+  <span id="date_time"></span>
+<script type="text/javascript">window.onload = date_time('date_time');</script>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="col">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4 class="title-content">Tabel Kelas</h4>
+      </div>
+      <div class="col">
+        <input type="submit" style="margin-left: 10px; float:right" href="#" data-toggle="modal" class="btn btn-success" name="login" data-target="#myModal" value="+">
+      </div>
+    </div>
+  </div>
+  <table id="tabelkeren" class="table  table-striped  table-hover">
+    <thead>
+    <tr>
+      <th>NAMA KELAS</th>
+      <th>PROGRAM STUDI</th>
+      <th>JUMLAH MAHASISWA</th>
+      <th>KUOTA</th>
+    </tr>
+    </thead>
+    <tbody>
+      <?php $i = 0; ?>
+      <?php foreach($kelas->result() as $data):?>
+      <?php
+          $i += 1;
+          $jml = $this->db->query('SELECT * FROM app_kelas_mhs WHERE id_kelas='.$data->id_kelas);
+      ?>
+      <tr>
+        <td><?php echo ($data->nama_kelas); ?></td>
+        <td><?php echo ($data->nama_prodi); ?></td>
+        <td><?php echo ($jml->num_rows()); ?></td>
+        <td><?php echo ($data->kuota); ?></td>
+      </tr>
+      <?php endforeach; ?>
+    </tbody>
+    <tfoot>
+    <tr>
+      <th>NAMA KELAS</th>
+      <th>PROGRAM STUDI</th>
+      <th>JUMLAH MAHASISWA</th>
+      <th>KUOTA</th>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+<section class="content-popup">
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              
               <h4 class="modal-title" id="myModalLabel">Tambah Kelas Baru</h4>
             </div>
             <div class="modal-body">
 
             <?php echo form_open("main_controller/Kelas_addNew"); ?>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Program Studi</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_prodi">
@@ -104,7 +86,7 @@
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun Angkatan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="Angkatan">
@@ -115,7 +97,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nomor Kelas</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_kelas" placeholder="Nomor Kelas" required>
@@ -124,7 +106,7 @@
 
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jumlah Mahasiswa</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="jumlah_mhs" placeholder="Jumlah Mahasiswa" required>
@@ -133,8 +115,9 @@
             </div>
 
             <div class="modal-footer">
-              <input type="submit" class="btn btn-Warning" name="addnew" value="Submit"></input>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
+              
             </div>
 
             <?php echo form_close(); ?>
@@ -145,13 +128,12 @@
 
 
   </section>
-
-  <section class="content-popup">
+<section class="content-popup">
     <div class="modal fade" id="help_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
      <div class="modal-dialog">
       <div class="modal-content">
        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        
         <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
        </div>
        <div class="modal-body">
@@ -166,11 +148,9 @@
         Admin dapat menghapus informasi kelas jika diperlukan.
        </div>
        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
        </div>
       </div>
      </div>
     </div>
    </section>
-  <!-- /.content -->
-</div>

@@ -21,20 +21,20 @@
 
             <form class="form-horizontal">
               <div class="box-body">
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">NIDN</label>
                   <div class="col-sm-5">: 1301549654
                   </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-row">
                   <label class="col-sm-3 from-control-label">Nama Lengkap</label>
-                  <div class="col-sm-5">: Fazrian Ramadlan              
+                  <div class="col-sm-5">: Fazrian Ramadlan
                   </div>
                 </div>
               </div>
             </form>
-          </div>  
+          </div>
         </div>
 
 
@@ -45,10 +45,10 @@
                 <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
+                  <th>#</th>
                   <th>Kode Mata Kuliah</th>
-                  <th>Nama Mata Kuliah</th> 
-                  <th>Kelas</th>                
+                  <th>Nama Mata Kuliah</th>
+                  <th>Kelas</th>
                   <th>Jumlah Kehadiran</th>
                   <th>Jumlah Pertemuan Kelas</th>
                   <th>Presentase Pertemuan</th>
@@ -63,7 +63,7 @@
                   <td>19</td>
                   <td>20</td>
                   <td>95%</td>
-                </tr>              
+                </tr>
               </table>
             </div>
             <!-- /.box-body -->

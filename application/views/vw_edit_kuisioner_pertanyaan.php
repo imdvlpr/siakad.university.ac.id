@@ -31,14 +31,14 @@
               <input type="hidden" class="form-control" name="id_kuisioner_judul" value="<?php echo $kuisioner_judul->row()->id_kuisioner_judul; ?>" readonly>
               <input type="hidden" class="form-control" name="id_kuisioner_pertanyaan" value="<?php echo $kuisioner_pertanyaan->row()->id_kuisioner_pertanyaan; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3"> Pertanyaan</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="pertanyaan_kuisioner" value="<?php echo $kuisioner_pertanyaan->row()->pertanyaan ?>" required>
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

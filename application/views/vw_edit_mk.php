@@ -29,28 +29,28 @@
             <?php echo form_open("main_controller/Matkul_update"); ?>
 
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Kode Mata Kuliah</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="kode_mk" placeholder="Kode Mata Kuliah" value="<?php echo $matkul->row()->kode_mk; ?>" readonly>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Mata Kuliah</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_mk" placeholder="Nama Mata Kuliah" value="<?php echo $matkul->row()->nama_mk; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">SKS Mata Kuliah</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="sks_mk" placeholder="SKS Mata Kuliah" value="<?php echo $matkul->row()->sks_mk; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Semester</label>
                 <div class="col-md-9">
                   <select class="form-control" name="semester">
@@ -65,14 +65,14 @@
                 </div>
               </div> 
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tingkat</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tingkat" placeholder="Tingkat" value="<?php echo $matkul->row()->tingkat; ?>">
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

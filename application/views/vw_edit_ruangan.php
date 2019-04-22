@@ -30,14 +30,14 @@
 
               <input type="hidden" class="form-control" name="ruangan_id" placeholder="ID Ruangan" value="<?php echo $ruangan->row()->ruangan_id; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Ruangan</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_ruangan" placeholder="Nama Ruangan" value="<?php echo $ruangan->row()->nama_ruangan; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Gedung</label>
                 <div class="col-md-9">
                
@@ -54,21 +54,21 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Kapasitas</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="kapasitas" placeholder="Kapasitas Ruangan" value="<?php echo $ruangan->row()->kapasitas; ?>">
                 </div>
               </div>
               
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Keterangan</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="keterangan" placeholder="Keterangan" value="<?php echo $ruangan->row()->keterangan; ?>">
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

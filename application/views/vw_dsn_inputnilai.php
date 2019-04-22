@@ -29,7 +29,7 @@
             <form>
             <table id="tabelkeren" class="table table-bordered table-striped">
               <thead>
-                <th>No</th>
+                <th>#</th>
                 <th>NIM</th>
                 <th>Nama Mahasiswa</th>
                 <th>Kelas</th>

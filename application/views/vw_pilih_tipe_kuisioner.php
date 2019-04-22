@@ -26,7 +26,7 @@
 
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <a href="<?php echo base_url()?>index.php/main_controller/view_pilih_tipe_kuisioner_tipe_satu/" class="btn btn-sm"><i class="fa fa-edit"></i> Tipe Satu</a>
                       <a href="<?php echo base_url()?>index.php/main_controller/redirect_tipe_kuisioner/" class="btn btn-sm"><i class="fa fa-trash"></i> Tipe Dua</a>
                     </div>

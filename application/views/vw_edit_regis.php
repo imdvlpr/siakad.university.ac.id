@@ -27,7 +27,7 @@
 
         <div class="box-body">
           <?php echo form_open("main_controller/registrasi_update"); ?>
-            <div class="form-group">
+            <div class="form-row">
 
               <input type="hidden" class="form-control" name="id_registrasi" value="<?php echo $regis->row()->id_registrasi; ?>" readonly>
 
@@ -38,7 +38,7 @@
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-row">
               <label for="" class="col-md-3">Keterangan</label>
               <div class="col-md-9">
                 <?php
@@ -51,14 +51,14 @@
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-row">
               <label for="" class="col-md-3">NIM</label>
               <div class="col-md-9">
                 <input type="text" class="form-control" name="nim" placeholder="" value="<?php echo $regis->row()->nim; ?>" readonly>
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-row">
               <label for="" class="col-md-3">Status</label>
               <div class="col-md-9">
                 <div class="radio">
@@ -109,7 +109,7 @@
                 </div>
               </div>
             </div>
-          <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+          <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
           <?php echo form_close(); ?>
         </div>
         <!-- /.box-body -->
@@ -136,7 +136,7 @@
           <table id="tabelkeren" class="table  table-striped  table-hover">
             <thead>
             <tr>
-              <th>NO</th>
+              <th>#</th>
               <th>NIM</th>
               <th>MATA KULIAH</th>
               <th>KELAS</th>
@@ -160,7 +160,7 @@
             </tbody>
             <tfoot>
             <tr>
-              <th>NO</th>
+              <th>#</th>
               <th>NIM</th>
               <th>MATA KULIAH</th>
               <th>KELAS</th>

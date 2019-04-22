@@ -30,14 +30,14 @@
 
               <input type="hidden" class="form-control" name="id_angkatan" placeholder="ID Angkatan" value="<?php echo $angkatan->row()->id_angkatan; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tahun</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tahun" placeholder="Tahun" value="<?php echo $angkatan->row()->tahun; ?>">
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

@@ -1,35 +1,41 @@
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="float-left">
+        <h6>DOSENTES</h6>
+        <h2>Tugas Mahasiswa</h2>
+      </div>
+    </div>
+    <div class="col">
+      <div class="float-right">
+        <div class="input-group mb-3" style="padding-top: 20px;">
+        <div class="input-group-prepend">
 
-      <h1>
-        Tugas Perkuliahan
-        <small>Preview</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li class="active"> Tugas Mahasiswa</li>
-        <li class="active"> Buat Tugas</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-
-    <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Daftar Tugas Kelas <i><b><?php echo $kelas->row()->nama_kelas; ?></b></i></h3>
-              <input type="submit" style="margin-left: 10px; float:right" href="#" data-toggle="modal" class="btn btn-success" name="login" data-target="#myModal" value="Tambah Tugas">
-            </div>
-            <!-- /.box-header -->
-
-
-            <div class="box-body">
+        </div>
+        <span id="date_time"></span>
+      <script type="text/javascript">window.onload = date_time('date_time');</script>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="col">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 class="box-title">Daftar Tugas Kelas <i><b><?php echo $kelas->row()->nama_kelas; ?></b></i></h3>
+      </div>
+      <div class="col">
+        <input type="submit" style="margin-left: 10px; float:right" href="#" data-toggle="modal" class="btn btn-success" name="login" data-target="#myModal" value="Tambah Tugas">
+      </div>
+    </div>
+  </div>
+  <br>
               <table id="tabelkeren" class="table table-striped table-hover">
                 <thead>
                 <tr>
-                  <th>NO</th>
+                  <th>#</th>
                   <th>JUDUL TUGAS</th>
                   <th>BATAS UPLOAD</th>
                   <th id="s">OPERASI</th>
@@ -54,49 +60,38 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>NO</th>
+                  <th>#</th>
                   <th>JUDUL TUGAS</th>
                   <th>BATAS UPLOAD</th>
                   <th id="s">OPERASI</th>
                 </tr>
                 </tfoot>
               </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-    </section>
-
     <section class="content-popup">
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
               <h4 class="modal-title" id="myModalLabel">Upload Tugas Baru</h4>
             </div>
             <div class="modal-body">
             <?php echo form_open_multipart('main_controller/do_upload_tugas');?>
               <input type="hidden" name="id_jadwal_master" value="<?php echo $id_jadwal; ?>">
 
-              <div class="form-group"  style="padding-bottom: 30px">
+              <div class="form-row"  style="padding-bottom: 30px">
                 <label for="" class="col-md-3">Judul Tugas</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="judul" placeholder="Judul Tugas" required>
                 </div>
               </div>
 
-              <div class="form-group" style="padding-bottom: 30px">
+              <div class="form-row" style="padding-bottom: 30px">
                 <label class="col-md-3">Batas Upload</label>
                 <div class="col-md-9">
                 <div class="input-group date">
                   <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
+                    <i class=""></i>
                   </div>
                   <input type="text" name='bts_upload' class="form-control pull-right" id="datepicker">
                 </div>
@@ -104,17 +99,15 @@
                 <!-- /.input group -->
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">File Tugas</label>
                 <div class="col-md-9">
                   <div class="input-grup">
                     <div class="custom-file">
                         <input type="file" name="userfile" class="custum-file-input" id="InputFile" />
                         <label class="custum-file-input" for="InputFile"></label>
-                        <div class="card-footer">
-                          <input type="submit" value="Upload" class="btn btn-info float-right"></button>
-                        </div>
                     </div>
+                      <input type="submit" value="Upload" class="btn btn-info float-right"></button>
                   </div>
                 </div>
               </div>
@@ -128,5 +121,5 @@
         </div>
 
 
-  </section>
+    </section>
 </div>

@@ -28,7 +28,7 @@
 
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <label class="col-sm-1 from-control-label">Tahun Akademik</label><p>: <?php echo (substr($kuisioner_judul->row()->keterangan, 0,4)); echo "-"; echo substr($kuisioner_judul->row()->keterangan, -1);?></p>
                       <label class="col-sm-1 from-control-label">Judul</label><p>: <?php echo ($kuisioner_judul->row()->judul); ?></p>
                     </div>
@@ -48,7 +48,7 @@
                     <table id="tabelkeren" class="table  table-striped  table-hover">
                       <thead>
                       <tr>
-                        <th>NO</th>
+                        <th>#</th>
                         <th>PERTANYAAN</th>
                         <th id="s">OPERASI</th>
                       </tr>
@@ -70,7 +70,7 @@
                       </tbody>
                       <tfoot>
                       <tr>
-                        <th>NO</th>
+                        <th>#</th>
                         <th>PERTANYAAN</th>
                         <th id="s">OPERASI</th>
                       </tr>
@@ -90,7 +90,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              
               <h4 class="modal-title" id="myModalLabel">Tambah Pertanyaan Baru</h4>
             </div>
             <div class="modal-body">
@@ -98,15 +98,16 @@
 
               <input type="hidden" class="form-control" name="id_kuisioner_judul" value="<?php echo $kuisioner_judul->row()->id_kuisioner_judul; ?>" readonly>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3"> Pertanyaan</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="pertanyaan_kuisioner" placeholder="Pertanyaan Kuisioner" required>
                 </div>
               </div>
 
-              <input type="submit" class="btn btn-Warning" name="addnew" value="Submit"></input>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
+              
             </div>
             <div class="modal-footer">
             </div>
@@ -122,7 +123,7 @@
      <div class="modal-dialog">
       <div class="modal-content">
        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        
         <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
        </div>
        <div class="modal-body">
@@ -131,7 +132,7 @@
         </div>
        </div>
        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
        </div>
       </div>
      </div>

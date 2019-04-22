@@ -26,7 +26,7 @@
 
                 <form class="form-horizontal">
                   <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-row">
                       <a href="<?php echo base_url()?>index.php/main_controller/view_list_kuisioner_by_jadwal_master/" class="btn btn-sm"><i class="fa fa-edit"></i> By Jadwal Master</a>
                       <a href="<?php echo base_url()?>index.php/main_controller/view_list_kuisioner_by_dosen/" class="btn btn-sm"><i class="fa fa-trash"></i> By Dosen</a>
                     </div>

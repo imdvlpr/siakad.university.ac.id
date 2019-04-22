@@ -29,7 +29,7 @@
           <div class="box-body">
             <?php echo form_open("main_controller/Dosen_update"); ?>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">NIDN</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nidn" placeholder="Nomor Induk Dosen" value="<?php echo $dosen->row()->nidn; ?>" readonly>
@@ -37,14 +37,14 @@
               </div>
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Nama Lengkap</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nama_lengkap" placeholder="Nama Lengkap Dosen" value="<?php echo $dosen->row()->nama_lengkap; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Status Pekerjaan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="status_pekerjaan">
@@ -61,35 +61,35 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">NIP</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="nip" placeholder="NIP Dosen" value="<?php echo $dosen->row()->nip; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">No KTP</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="no_ktp" placeholder="Nomor KTP Dosen" value="<?php echo $dosen->row()->no_ktp; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tempat Lahir</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir Dosen" value="<?php echo $dosen->row()->tempat_lahir; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Tanggal Lahir</label>
                 <div class="col-md-9">
                   <input id="datepicker" type="text" class="form-control" name="tanggal_lahir" placeholder="yyyy-mm-dd" value="<?php echo $dosen->row()->tanggal_lahir; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Gender</label>
                 <div class="col-md-9">
                   <div class="radio">
@@ -116,7 +116,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Agama</label>
                 <div class="col-md-9">
                   <select class="form-control" name="agama_id">
@@ -132,7 +132,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Status Kawin</label>
                 <div class="col-md-9">
                   <select class="form-control" name="status_kawin">
@@ -147,35 +147,35 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Gelar Pendidikan</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="gelar_pendidikan" placeholder="Gelar Pendidikan Dosen" value="<?php echo $dosen->row()->gelar_pendidikan; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Alamat</label>
                 <div class="col-md-9">
                   <textarea class="form-control" rows="3" name="alamat" placeholder="Alamat Lengkap"><?php echo $dosen->row()->alamat; ?></textarea>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">No HP</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="hp" placeholder="No HP Dosen" value="<?php echo $dosen->row()->hp; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Email</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="email" placeholder="Email Dosen" value="<?php echo $dosen->row()->email; ?>">
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Program Studi</label>
                 <div class="col-md-9">
                   <select class="form-control" name="prodi_id">
@@ -186,7 +186,7 @@
                 </div>
               </div>
 
-            <input type="submit" class="btn btn-Warning" name="update" value="Submit"></input>
+            <input type="submit" class="btn btn-success" name="update" value="Submit"></input>
 
             <?php echo form_close(); ?>
 

@@ -115,7 +115,7 @@ table td{
 	<table class="tabelksm" style="width: 100%; border-bottom: 1px solid #000000; border-top: 1px solid #000000;">
 		<thead>
 			<tr style="height: 30px">
-				<th>No</th>
+				<th>#</th>
 				<th>Mata Kuliah</th>
 				<th>SKS</th>
 				<th>Kelas</th>

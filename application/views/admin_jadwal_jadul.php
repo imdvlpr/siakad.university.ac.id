@@ -93,12 +93,12 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              
               <h4 class="modal-title" id="myModalLabel">Tambah Jadwal Baru</h4>
             </div>
             <div class="modal-body">
             <?php echo form_open("main_controller/jadwal_mk_addNew"); ?>
-            <div class="form-group">
+            <div class="form-row">
               <label for="" class="col-md-3">Tahun Akademik</label>
               <div class="col-md-9">
                 <select class="form-control" name="id_tahun_akademik">
@@ -109,7 +109,7 @@
               </div>
             </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Hari</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_hari">
@@ -120,13 +120,13 @@
                 </div>
               </div>
 
-              <!-- <div class="form-group">
+              <!-- <div class="form-row">
                 <label for="" class="col-md-3">Shift</label>
                 <div class="col-md-9">
                   <input type="text" class="form-control" name="id_shift" placeholder="Shift" required>
                 </div>
               </div> -->
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jam Mulai</label>
                 <div class="col-md-9">
                   <select class="form-control" name="jam_mulai">
@@ -137,7 +137,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Jam Akhir</label>
                 <div class="col-md-9">
                   <select class="form-control" name="jam_selesai">
@@ -149,7 +149,7 @@
               </div>
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Gedung</label>
                 <div class="col-md-9">
                   <select class="form-control" name="gedung_id" id="gedung">
@@ -161,7 +161,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Ruangan</label>
                 <div class="col-md-9">
                   <select class="form-control" name="ruangan_id" id="ruangan_id">
@@ -169,7 +169,7 @@
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Program Studi</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_prodi" id="prodi">
@@ -181,7 +181,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Kelas</label>
                 <div class="col-md-9">
                   <select class="form-control" name="id_kelas" id="kelas">
@@ -191,7 +191,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">Mata Kuliah</label>
                 <div class="col-md-9">
                   <select class="form-control" name="kode_mk" id="matkul">
@@ -205,7 +205,7 @@
 
 
 
-              <div class="form-group">
+              <div class="form-row">
                 <label for="" class="col-md-3">NIDN</label>
                 <div class="col-md-9">
                   <select class="form-control" name="nidn" id="dosen">
@@ -215,8 +215,9 @@
                 </div>
               </div>
 
-              <input type="submit" class="btn btn-Warning" name="addnew" value="Submit"></input>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-success" name="addnew" value="Submit"></input>
+              
             </div>
             <div class="modal-footer">
             </div>

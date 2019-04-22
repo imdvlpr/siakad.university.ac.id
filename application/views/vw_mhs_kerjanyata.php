@@ -28,7 +28,7 @@
             <div class="modal-dialog">
                <div class="modal-content">
                   <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     
                      <h4 class="modal-title" id="helpModalLabel">Bantuan</h4>
                   </div>
                   <div class="modal-body">
@@ -41,7 +41,7 @@
                      </p>
                   </div>
                   <div class="modal-footer">
-                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                     
                   </div>
                </div>
             </div>
@@ -59,25 +59,25 @@
                   </div>
                   <form class="form-horizontal">
                      <div class="box-body">
-                        <div class="form-group">
+                        <div class="form-row">
                            <label class="col-sm-3 from-control-label">NIM</label>
                            <p>: <?php echo $this->session->kode_user ?></p>
                            <div class="col-sm-5">
                            </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-row">
                            <label class="col-sm-3 from-control-label">Nama Lengkap</label>
                            <p>: <?php echo $this->session->display_name ?></p>
                            <div class="col-sm-5">
                            </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-row">
                            <label class="col-sm-3 from-control-label">Tahun Akademik</label>
                            <p>: <?php echo (substr($tahun_ak_open, 0,4)); echo "-"; echo substr($tahun_ak_open, -1);?></p>
                            <div class="col-sm-5">
                            </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-row">
                            <label class="col-sm-3 from-control-label">Semester</label>
                           <p>: </p>
                            <div class="col-sm-5">
@@ -96,17 +96,17 @@
                <div class="box box-primary">
                   <form class="form-horizontal">
                      <div class="box-body">
-                        <div class="form-group">
+                        <div class="form-row">
                            <label class="col-sm-3 from-control-label">Ditempatkan di</label><p>: Telkom University</p>
                            <div class="col-sm-5">
                            </div>
                         </div>
-                     <div class="form-group">
+                     <div class="form-row">
                         <label class="col-sm-3 from-control-label">Alamat KNM</label><p>: Jln Telekomunikasi No.55 Kabupaten Bandung</p>
                         <div class="col-sm-5">
                         </div>
                      </div>
-                     <div class="form-group">
+                     <div class="form-row">
                         <label class="col-sm-3 from-control-label">Pembimbing Kerja Nyata</label><p>: Bpk. Wahyu S.K</p>
                         <div class="col-sm-5">
                         </div>
