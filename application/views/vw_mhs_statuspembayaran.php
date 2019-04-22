@@ -118,14 +118,16 @@
     </tfoot>
   </table>
 </div>
-
+<hr>
 <?php if (isset($tahun_ak_open->row()->tahun_akademik_id)) {
   ?>
+<div class="col">
 
   <div class="row">
     <div class="col-12 ">
       <div class="box box-primary">
         <div class="box-header with-border">
+
           <h3 class="box-title">Pembayaran Baru</h3>
           <hr class="">
         </div>
@@ -138,16 +140,16 @@
           <input type="hidden" name="judul" value="TX_<?php echo $tahun_ak_open->row()->keterangan;?>_<?php echo $this->session->kode_user ?>"/>
 
           <div class="form-row">
-            <label for="" class="col-md-7">Tahun Akademik</label>
-            <div class="col-md-5">
+            <label for="" class="col-md-1">Tahun Akademik</label>
+            <div class="col-md-10">
               <select class="form-control">
                 <option value=""><?php echo (substr($tahun_ak_open->row()->keterangan, 0,4)); echo "-"; echo substr($tahun_ak_open->row()->keterangan, -1);?></option>
               </select>
             </div>
           </div>
           <div class="form-row">
-            <label for="" class="col-md-7">Jenis Pembayaran</label>
-            <div class="col-md-5">
+            <label for="" class="col-md-1">Jenis Pembayaran</label>
+            <div class="col-md-10">
               <select class="form-control" name="j_bayar">
                 <option>-- Pilih Jenis Pembayaran --</option>
                 <option value="1">Registrasi</option>
@@ -156,8 +158,8 @@
             </div>
           </div>
           <div class="form-row">
-            <label for="" class="col-md-7">Bulan</label>
-            <div class="col-md-5">
+            <label for="" class="col-md-1">Bulan</label>
+            <div class="col-md-10">
               <select class="form-control" name="bulan">
                 <option>-- Pilih Bulan --</option>
                 <option value="1">Januari</option>
@@ -176,8 +178,8 @@
             </div>
           </div>
           <div class="form-row">
-            <label for="" class="col-md-7">Bukti Pembayaran</label>
-            <div class="col-md-5">
+            <label for="" class="col-md-1">Bukti Pembayaran</label>
+            <div class="col-md-10">
               <div class="input-grup">
                 <div class="custom-file">
                     <input type="file" name="userfile" class="custum-file-input" id="InputFile" />
@@ -189,27 +191,23 @@
           </div>
 
           <div class="form-row">
-            <label for="" class="col-md-7"></label>
-            <div class="col-md-5">
+            <label for="" class="col-md-9 "></label>
+            <div class="col-md-2">
               <div class="input-grup">
                 <div class="custom-file">
-                  <input type="submit" value="Upload"  style="float:right; "class="btn btn-info float-right col-md-6 "></button>
+                    <input type="submit" value="Upload"  style="float:right;  "class="btn btn-info col-md-6 "></button>
                 <br><br><br>
 
                 </div>
               </div>
             </div>
           </div>
-
-
-          <div class="card-footer">
-
-          </div>
         </form>
         </div>
       </div>
     </div>
   </div>
+</div>
   <?php
 } ?>
 
