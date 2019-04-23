@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2019 at 04:39 AM
+-- Generation Time: Apr 23, 2019 at 02:17 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -38,7 +38,7 @@ CREATE TABLE `akademik_angkatan` (
 --
 
 INSERT INTO `akademik_angkatan` (`id_angkatan`, `tahun`) VALUES
-(2, 2019);
+(1, 2019);
 
 -- --------------------------------------------------------
 
@@ -62,7 +62,7 @@ CREATE TABLE `akademik_jadwal_master` (
 --
 
 INSERT INTO `akademik_jadwal_master` (`id_jadwal_master`, `id_tahun_akademik`, `kode_mk`, `id_prodi`, `id_kelas`, `nidn`, `nilai_is_filled`, `kuisioner_isFilled`) VALUES
-(7, 2, 'MTK', 2, 4, '1301154417', 0, 0);
+(1, 1, 'CE12345', 1, 1, '123123', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -85,7 +85,8 @@ CREATE TABLE `akademik_jadwal_matkul` (
 --
 
 INSERT INTO `akademik_jadwal_matkul` (`id_jadwal_matkul`, `id_jadwal_master`, `id_hari`, `jam_mulai`, `jam_selesai`, `gedung_id`, `ruangan_id`) VALUES
-(6, 7, 1, '06.30', '07.29', 3, 3);
+(1, 1, 1, '06.30', '07.29', 1, 1),
+(2, 1, 2, '06.30', '07.29', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -103,6 +104,13 @@ CREATE TABLE `akademik_jadwal_ujian` (
   `ruangan_id` int(11) NOT NULL,
   `jenis_ujian` int(1) NOT NULL COMMENT '1=UTS, 2=UAS'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `akademik_jadwal_ujian`
+--
+
+INSERT INTO `akademik_jadwal_ujian` (`id_jadwal_ujian`, `id_jadwal_master`, `id_hari`, `jam_mulai`, `jam_selesai`, `gedung_id`, `ruangan_id`, `jenis_ujian`) VALUES
+(1, 1, 1, '06.30', '07.29', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -132,6 +140,13 @@ CREATE TABLE `akademik_kehadiran_mhs` (
   `kehadiran` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `akademik_kehadiran_mhs`
+--
+
+INSERT INTO `akademik_kehadiran_mhs` (`id_kehadiran`, `id_presensi`, `nim`, `kehadiran`) VALUES
+(1, 1, 1301154417, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -150,7 +165,7 @@ CREATE TABLE `akademik_kelas` (
 --
 
 INSERT INTO `akademik_kelas` (`id_kelas`, `nama_kelas`, `id_prodi`, `kuota`) VALUES
-(4, 'IF-19-1', 2, 30);
+(1, 'FIF-19-1', 1, 30);
 
 -- --------------------------------------------------------
 
@@ -170,7 +185,8 @@ CREATE TABLE `akademik_krs` (
 --
 
 INSERT INTO `akademik_krs` (`id_krs`, `nim`, `id_jadwal_master`, `semester`) VALUES
-(3, 123123, 7, 0);
+(1, 1301154417, 1, 0),
+(2, 35345345, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -184,6 +200,13 @@ CREATE TABLE `akademik_materi` (
   `judul_materi` varchar(50) NOT NULL,
   `id_file` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `akademik_materi`
+--
+
+INSERT INTO `akademik_materi` (`id_materi`, `id_jadwal_master`, `judul_materi`, `id_file`) VALUES
+(1, 1, 'Perkenalan', 2);
 
 -- --------------------------------------------------------
 
@@ -205,7 +228,8 @@ CREATE TABLE `akademik_matkul` (
 --
 
 INSERT INTO `akademik_matkul` (`kode_mk`, `nama_mk`, `id_prodi`, `sks_mk`, `semester`, `tingkat`) VALUES
-('MTK', 'Matematika', 2, 3, 1, 1);
+('123', 'WEBPRO', 1, 4, 1, 1),
+('CE12345', 'Kalkulus', 1, 4, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -219,6 +243,13 @@ CREATE TABLE `akademik_nilai` (
   `nim` varchar(20) NOT NULL,
   `nilai` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `akademik_nilai`
+--
+
+INSERT INTO `akademik_nilai` (`id_nilai`, `id_jadwal_master`, `nim`, `nilai`) VALUES
+(1, 1, '1301154417', 'AB');
 
 -- --------------------------------------------------------
 
@@ -234,6 +265,13 @@ CREATE TABLE `akademik_presensi` (
   `id_jadwal_matkul` int(11) NOT NULL,
   `is_filled` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `akademik_presensi`
+--
+
+INSERT INTO `akademik_presensi` (`id_presensi`, `pertemuan`, `judul_pertemuan`, `tanggal`, `id_jadwal_matkul`, `is_filled`) VALUES
+(1, 1, 'Perkenalan', '2019-04-01', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -252,7 +290,7 @@ CREATE TABLE `akademik_prodi` (
 --
 
 INSERT INTO `akademik_prodi` (`id_prodi`, `nama_prodi`, `kode_prodi`) VALUES
-(2, 'S1 Teknik Informatika', 'IF');
+(1, 'S1 Teknik Informatika', 'FIF');
 
 -- --------------------------------------------------------
 
@@ -272,7 +310,9 @@ CREATE TABLE `akademik_registrasi` (
 --
 
 INSERT INTO `akademik_registrasi` (`id_registrasi`, `id_transaksi`, `tanggal`, `status_regis`) VALUES
-(6, 6, '2019-04-09', 1);
+(1, 1, '2019-04-23', 1),
+(2, 2, '2019-04-23', 1),
+(3, 3, '2019-04-23', 0);
 
 -- --------------------------------------------------------
 
@@ -293,7 +333,7 @@ CREATE TABLE `akademik_tahun_akademik` (
 --
 
 INSERT INTO `akademik_tahun_akademik` (`tahun_akademik_id`, `keterangan`, `batas_registrasi`, `status`, `tahun`) VALUES
-(2, '20191', '0000-00-00', 'y', 2019);
+(1, '20191', '2019-04-17', 'y', 2019);
 
 -- --------------------------------------------------------
 
@@ -308,6 +348,13 @@ CREATE TABLE `akademik_tugas` (
   `id_file` int(10) NOT NULL,
   `batas_upload` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `akademik_tugas`
+--
+
+INSERT INTO `akademik_tugas` (`id_tugas`, `id_jadwal_master`, `judul_tugas`, `id_file`, `batas_upload`) VALUES
+(1, 1, 'Tugas 1 ', 3, '2019-04-03');
 
 -- --------------------------------------------------------
 
@@ -349,7 +396,7 @@ CREATE TABLE `app_gedung` (
 --
 
 INSERT INTO `app_gedung` (`gedung_id`, `nama_gedung`) VALUES
-(3, 'Tokong Nanas');
+(1, 'Tokong Nanas');
 
 -- --------------------------------------------------------
 
@@ -392,7 +439,9 @@ CREATE TABLE `app_kelas_mhs` (
 --
 
 INSERT INTO `app_kelas_mhs` (`id`, `id_kelas`, `id_mhs`) VALUES
-(3, 4, 123123);
+(1, 1, 1301154417),
+(2, 1, 35345345),
+(3, 1, 123123123);
 
 -- --------------------------------------------------------
 
@@ -443,7 +492,7 @@ CREATE TABLE `app_ruangan` (
 --
 
 INSERT INTO `app_ruangan` (`ruangan_id`, `nama_ruangan`, `gedung_id`, `kapasitas`, `keterangan`) VALUES
-(3, 'KU1.01.01', 3, 30, 'Ruang Kuliah Umum 1');
+(1, 'KU3.01.01', 1, 30, 'Ruangan Perkuliahan');
 
 -- --------------------------------------------------------
 
@@ -496,7 +545,7 @@ CREATE TABLE `keuangan_biaya` (
 --
 
 INSERT INTO `keuangan_biaya` (`id_biaya`, `id_tahun_akademik`, `id_prodi`, `jenis_pembayaran`, `bulan`, `jumlah_biaya`) VALUES
-(2, 2, 2, 1, 1, 500000);
+(1, 1, 1, 1, 1, 500000);
 
 -- --------------------------------------------------------
 
@@ -519,7 +568,9 @@ CREATE TABLE `keuangan_transaksi` (
 --
 
 INSERT INTO `keuangan_transaksi` (`id_transaksi`, `id_tahun_akademik`, `nim`, `id_biaya`, `status_pembayaran_mhs`, `tanggal`, `buktipembayaran`) VALUES
-(6, 2, 123123, 2, 1, '2019-04-09', '54');
+(1, 1, 1301154417, 1, 1, '2019-04-23', '1'),
+(2, 1, 35345345, 1, 1, '2019-04-23', '5'),
+(3, 1, 123123123, 1, 1, '2019-04-23', '6');
 
 -- --------------------------------------------------------
 
@@ -533,6 +584,15 @@ CREATE TABLE `kuisioner_judul` (
   `tipe` int(11) NOT NULL,
   `judul` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kuisioner_judul`
+--
+
+INSERT INTO `kuisioner_judul` (`id_kuisioner_judul`, `id_tahun_akademik`, `tipe`, `judul`) VALUES
+(1, 1, 1, 'Kuisioner'),
+(2, 1, 1, 'sss'),
+(3, 1, 2, 'addd');
 
 -- --------------------------------------------------------
 
@@ -563,6 +623,14 @@ CREATE TABLE `kuisioner_mhs_hasil_tipe_satu` (
   `hasil` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `kuisioner_mhs_hasil_tipe_satu`
+--
+
+INSERT INTO `kuisioner_mhs_hasil_tipe_satu` (`id_kuisioner_mhs_hasil_tipe_satu`, `id_kuisioner_judul`, `id_kuisioner_pertanyaan`, `id_jadwal_master`, `nim`, `hasil`) VALUES
+(1, 1, 1, 1, '1301154417', 1),
+(2, 1, 1, 1, '35345345', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -574,6 +642,14 @@ CREATE TABLE `kuisioner_pertanyaan` (
   `id_kuisioner_judul` int(11) NOT NULL,
   `pertanyaan` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kuisioner_pertanyaan`
+--
+
+INSERT INTO `kuisioner_pertanyaan` (`id_kuisioner_pertanyaan`, `id_kuisioner_judul`, `pertanyaan`) VALUES
+(1, 1, 'Apa ya?'),
+(2, 3, 'dddd');
 
 -- --------------------------------------------------------
 
@@ -608,7 +684,8 @@ CREATE TABLE `tbl_dosen` (
 --
 
 INSERT INTO `tbl_dosen` (`id_dosen`, `nama_lengkap`, `nidn`, `nip`, `no_ktp`, `tempat_lahir`, `tanggal_lahir`, `gender`, `agama_id`, `status_kawin`, `gelar_pendidikan`, `jabatan_akademik`, `pendidikan`, `alamat`, `hp`, `email`, `prodi_id`, `status_pekerjaan`, `foto_profil`) VALUES
-(1, 'M. F. Muzakki', '1301154417', '1301154417', '1301154417', 'asd', '1231-12-12', 'p', 1, 1, 'S2', '', '', 'asd', '123123123', 'dasda@asdasd.com', 2, 1, 0);
+(1, 'Deta Gian', '123123', '087873890490', '082240865439', 'Bandung', '1997-07-22', 'p', 1, 2, 'S1', '', '', 'Sukabirus', '087122098829', 'detagian@gmail.com', 1, 1, 0),
+(2, 'Pak Ardiles', '633333333300000', '1234', '123', 'asd', '2019-04-26', 'p', 1, 1, 's2', '', '', 'asd', '123', 'adasd@gmail.com', 1, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -653,7 +730,9 @@ CREATE TABLE `tbl_mahasiswa` (
 --
 
 INSERT INTO `tbl_mahasiswa` (`id_mahasiswa`, `nim`, `nama`, `angkatan_id`, `id_kelas`, `alamat`, `gender`, `agama_id`, `tempat_lahir`, `tanggal_lahir`, `nama_ibu`, `nama_ayah`, `no_hp_ortu`, `pekerjaan_id_ibu`, `pekerjaan_id_ayah`, `alamat_ayah`, `alamat_ibu`, `penghasilan_ayah`, `penghasilan_ibu`, `sekolah_nama`, `sekolah_telpon`, `sekolah_alamat`, `sekolah_jurusan`, `sekolah_tahun_lulus`, `kampus_prodi`, `semester_aktif`, `status_pembayaran_mahasiswa`, `status_mahasiswa`, `foto_profil`) VALUES
-(1, '123123', '123123', 2, 4, 'asdasd', 'p', 1, 'ghf', '1231-12-12', 'hgf', 'ghf', '876', 1, 1, 'asd', 'asd', '&lt;3000000', '&lt;3000000', 'asd', '123', 'zsdsa', 'ipa', 1233, '2', 2, 0, 1, 0);
+(1, '1301154417', 'M. Ramadhan', 1, 1, 'Sukapura', 'p', 1, 'Garut', '2019-04-18', 'Ipsum', 'Lorem', '098989890', 5, 8, 'Bandung', 'Bandung', '>10000000', '>10000000', 'SMK 1 Bojong Soang', '123123123', 'Bandung', 'ipa', 2018, '1', 2, 0, 1, 0),
+(2, '35345345', 'Ghina', 1, 1, 'sadddddd', 'p', 1, 'asdasd', '2019-05-02', 'asdasd', 'asdasd', '123123', 99, 99, 'asdasd', 'asdasd', '>10000000', '>10000000', 'asdasdasd', '123123123', 'asdasdasd', 'ipa', 2016, '1', 2, 0, 1, 0),
+(3, '123123123', 'asdasdasd', 1, 1, 'asasdasd', 'p', 3, 'asdasd', '2019-04-23', 'asd', 'asdasd', '123123', 11, 11, 'asdasd', 'asdasd', '&lt;3000000', '&lt;3000000', 'asdasd', '21123', 'asdasd', 'ipa', 1233, '1', 1, 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -676,9 +755,12 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`id_users`, `kode_user`, `display_name`, `username`, `password`, `level`, `last_login`) VALUES
-(1, 'SU0001', 'M Farhan Muzakki', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '2019-04-09 09:38:43'),
-(2, '1301154417', 'M. F. Muzakki', '1301154417', '5aff205cb3337c582e014d6d9a692f83', 2, NULL),
-(3, '123123', '123123', '123123', 'a809ab3dcef97569f55b56d9050d20cc', 3, '2019-04-09 02:05:34');
+(1, 'SU0001', 'M Farhan Muzakki', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '2019-04-23 07:16:00'),
+(4, '123123', 'Deta Gian', '123123', '4297f44b13955235245b2497399d7a93', 2, '2019-04-23 12:13:23'),
+(5, '1301154417', 'M. Ramadhan', '1301154417', 'f16f589e2abdc56d6dd52a82e55bccf6', 3, '2019-04-23 12:01:17'),
+(6, '35345345', 'Ghina', '35345345', '58cc635dfaaa5442d55504a1f4d66c7e', 3, '2019-04-23 12:39:17'),
+(7, '123123123', 'asdasdasd', '123123123', '60fb9ae8e5599f78d1db2283b1bc02c1', 3, '2019-04-23 02:26:41'),
+(8, '633333333300000', 'Pak Ardiles', '633333333300000', 'cc7cbba22875d9dcd36238c8fc15d421', 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -692,6 +774,13 @@ CREATE TABLE `temp_krs` (
   `id_jadwal_master` int(11) NOT NULL,
   `semester` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `temp_krs`
+--
+
+INSERT INTO `temp_krs` (`id_krs`, `nim`, `id_jadwal_master`, `semester`) VALUES
+(3, 123123123, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -712,11 +801,7 @@ CREATE TABLE `tugas_mhs` (
 --
 
 INSERT INTO `tugas_mhs` (`id_tugas_mhs`, `id_tugas`, `nim`, `id_file`, `uploaded_time`) VALUES
-(3, 5, '1301154417', 25, '0000-00-00'),
-(4, 8, '1301154417', 21, '0000-00-00'),
-(7, 11, '123123', 31, '2018-07-18'),
-(8, 12, '123123', 31, '2018-07-18'),
-(9, 9, '123123', 52, '2018-07-18');
+(1, 1, '1301154417', 4, '2019-04-23');
 
 -- --------------------------------------------------------
 
@@ -737,54 +822,12 @@ CREATE TABLE `uploaded_file` (
 --
 
 INSERT INTO `uploaded_file` (`id_bukti`, `judul`, `filename`, `owner`, `dir`) VALUES
-(5, 'TX_20181_1301154417', 'Foto_Profil.jpg', '1301154417', '3/1301154417/Foto_Profil.jpg'),
-(9, 'Bab Rep', '195-306-1-PB.pdf', '423088501', '2/423088501/1/195-306-1-PB.pdf'),
-(10, 'hjg', '1751-4684-1-PB.pdf', '423088501', '2/423088501/1/1751-4684-1-PB.pdf'),
-(11, 'asd', '795-2229-1-PB.pdf', '423088501', '2/423088501/2/795-2229-1-PB.pdf'),
-(12, 'asd', '2540-4933-1-PB.pdf', '423088501', '2/423088501/1/Materi/2540-4933-1-PB.pdf'),
-(13, 'asddas', '195-306-1-PB_2.pdf', '423088501', '2/423088501/1/Materi/195-306-1-PB_2.pdf'),
-(14, 'asasd', '795-2229-1-PB.pdf', '423088501', '2/423088501/1/Materi/795-2229-1-PB.pdf'),
-(15, 'asdasdasd', '1751-4684-1-PB.pdf', '423088501', '2/423088501/1/Materi/1751-4684-1-PB.pdf'),
-(16, 'tugas 1', '1358-5595-1-PB.pdf', '423088501', '2/423088501/1/Tugas/1358-5595-1-PB.pdf'),
-(17, 'tugas 2', '17788-19839-1-PB.pdf', '423088501', '2/423088501/1/Tugas/17788-19839-1-PB.pdf'),
-(18, 'Tugas 1', '1358-5595-1-PB.pdf', '423088501', '2/423088501/1/Tugas/1358-5595-1-PB.pdf'),
-(19, 'Tugas 1', '2540-4933-1-PB.pdf', '423088501', '2/423088501/1/Tugas/2540-4933-1-PB.pdf'),
-(20, 'Tugas 1', '795-2229-1-PB.pdf', '423088501', '2/423088501/1/Tugas/795-2229-1-PB.pdf'),
-(21, '5', '2540-4933-1-PB.pdf', '1301154417', '3/1301154417/1/Tugas/2540-4933-1-PB.pdf'),
-(22, 'TGS_1301154417_5', '1358-5595-1-PB.pdf', '1301154417', '3/1301154417/1/Tugas/1358-5595-1-PB.pdf'),
-(23, 'TGS_1301154417_5', '195-306-1-PB.pdf', '1301154417', '3/1301154417/1/Tugas/195-306-1-PB.pdf'),
-(24, 'Tugas 1', '195-306-1-PB_2.pdf', '423088501', '2/423088501/2/Tugas/195-306-1-PB_2.pdf'),
-(25, 'TGS_1301154417_5', 'laporan_tugas_Qlearning_Fazrian.pdf', '1301154417', '3/1301154417/1/Tugas/laporan_tugas_Qlearning_Fazrian.pdf'),
-(26, 'Tugas 2', '5405-10445-1-SM.pdf', '423088501', '2/423088501/1/Tugas/5405-10445-1-SM.pdf'),
-(27, 'df', '4921-9468-1-SM.pdf', '423088501', '2/423088501/1/Materi/4921-9468-1-SM.pdf'),
-(28, 'TGS_1301154417_8', '2540-4933-1-PB.pdf', '1301154417', '3/1301154417/1/Tugas/2540-4933-1-PB.pdf'),
-(29, 'TX_20181_123123', 'Foto_Profil.jpg', '123123', '3/123123/Foto_Profil.jpg'),
-(30, 'qwe', 'CV_Tia.docx', '423088501', '2/423088501/4/Tugas/CV_Tia.docx'),
-(31, 'TGS_123123_9', '1301154417_IF3911.docx', '123123', '3/123123/4/Tugas/1301154417_IF3911.docx'),
-(32, 'adsads', 'Mahasiswa.docx', '423088501', '2/423088501/4/Tugas/Mahasiswa.docx'),
-(33, 'TGS_123123_10', '1301154417_IF3911.docx', '123123', '3/123123/4/Tugas/1301154417_IF3911.docx'),
-(34, 'asd', 'Mahasiswa.docx', '423088501', '2/423088501/4/Materi/Mahasiswa.docx'),
-(35, 'asd', 'CV_Wily.docx', '423088501', '2/423088501/4/Tugas/CV_Wily.docx'),
-(36, 'TGS_123123_11', '1301154417_IF3911.docx', '123123', '3/123123/4/Tugas/1301154417_IF3911.docx'),
-(37, 'sd', 'CV_Wily.docx', '423088501', '2/423088501/4/Tugas/CV_Wily.docx'),
-(38, 'TGS_123123_12', '1301154417_IF3911.docx', '123123', '3/123123/4/Tugas/1301154417_IF3911.docx'),
-(39, 'asd', 'CV_Wily.docx', '423088501', '2/423088501/4/Tugas/CV_Wily.docx'),
-(40, 'TGS_123123_13', '1301154417_IF3911.docx', '123123', '3/123123/4/Tugas/1301154417_IF3911.docx'),
-(41, 'TGS_123123_', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(42, 'TGS_123123_', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(43, 'DP_123123', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(44, 'DP_123123', 'produk.png', '123123', '3/123123/DP/produk.png'),
-(45, 'DP_123123', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(46, 'DP_123123', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(47, 'DP_123123', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(48, 'DP_123123', 'Foto_Profil.jpg', '123123', '3/123123/DP/Foto_Profil.jpg'),
-(49, 'DP_423088501', 'Foto_Profil.jpg', '423088501', '2/423088501/DP/Foto_Profil.jpg'),
-(50, 'DP_1301154417', 'Foto_Profil.jpg', '1301154417', '3/1301154417/DP/Foto_Profil.jpg'),
-(51, 'asd', '1101153622_Registrasi___Telkom_University.pdf', '423088501', '2/423088501/4/Tugas/1101153622_Registrasi___Telkom_University.pdf'),
-(52, 'TGS_123123_9', 'CV_Tia.docx', '123123', '3/123123/4/Tugas/CV_Tia.docx'),
-(53, 'asd', '1301154417_IF3911.docx', '423088501', '2/423088501/4/Tugas/1301154417_IF3911.docx'),
-(54, 'TX_20191_123123', 'z.png', '123123', '3/123123/z.png'),
-(55, 'TX_20191_123123', 'z.png', '123123', '3/123123/z.png');
+(1, 'TX_20191_1301154417', 'logo-icon.png', '1301154417', '3/1301154417/logo-icon.png'),
+(2, 'Perkenalan', 'BAB_1_1_BILANGAN_RIIL.docx', '123123', '2/123123/1/Materi/BAB_1_1_BILANGAN_RIIL.docx'),
+(3, 'Tugas 1 ', 'Bab_1_2_BILANGAN_PANGKAT.docx', '123123', '2/123123/1/Tugas/Bab_1_2_BILANGAN_PANGKAT.docx'),
+(4, 'TGS_1301154417_1', '5Vol59No2.pdf', '1301154417', '3/1301154417/1/Tugas/5Vol59No2.pdf'),
+(5, 'TX_20191_35345345', 'z.png', '35345345', '3/35345345/z.png'),
+(6, 'TX_20191_123123123', 'z.png', '123123123', '3/123123123/z.png');
 
 --
 -- Indexes for dumped tables
@@ -1010,25 +1053,25 @@ ALTER TABLE `uploaded_file`
 -- AUTO_INCREMENT for table `akademik_angkatan`
 --
 ALTER TABLE `akademik_angkatan`
-  MODIFY `id_angkatan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_angkatan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_jadwal_master`
 --
 ALTER TABLE `akademik_jadwal_master`
-  MODIFY `id_jadwal_master` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_jadwal_master` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_jadwal_matkul`
 --
 ALTER TABLE `akademik_jadwal_matkul`
-  MODIFY `id_jadwal_matkul` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_jadwal_matkul` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `akademik_jadwal_ujian`
 --
 ALTER TABLE `akademik_jadwal_ujian`
-  MODIFY `id_jadwal_ujian` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_jadwal_ujian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_kegiatan`
@@ -1040,67 +1083,67 @@ ALTER TABLE `akademik_kegiatan`
 -- AUTO_INCREMENT for table `akademik_kehadiran_mhs`
 --
 ALTER TABLE `akademik_kehadiran_mhs`
-  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_kelas`
 --
 ALTER TABLE `akademik_kelas`
-  MODIFY `id_kelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_kelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_krs`
 --
 ALTER TABLE `akademik_krs`
-  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `akademik_materi`
 --
 ALTER TABLE `akademik_materi`
-  MODIFY `id_materi` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_materi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_nilai`
 --
 ALTER TABLE `akademik_nilai`
-  MODIFY `id_nilai` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_nilai` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_presensi`
 --
 ALTER TABLE `akademik_presensi`
-  MODIFY `id_presensi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_presensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_prodi`
 --
 ALTER TABLE `akademik_prodi`
-  MODIFY `id_prodi` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_prodi` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_registrasi`
 --
 ALTER TABLE `akademik_registrasi`
-  MODIFY `id_registrasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_registrasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `akademik_tahun_akademik`
 --
 ALTER TABLE `akademik_tahun_akademik`
-  MODIFY `tahun_akademik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `tahun_akademik_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akademik_tugas`
 --
 ALTER TABLE `akademik_tugas`
-  MODIFY `id_tugas` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tugas` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `app_gedung`
 --
 ALTER TABLE `app_gedung`
-  MODIFY `gedung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `gedung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `app_hari`
@@ -1118,7 +1161,7 @@ ALTER TABLE `app_kelas_mhs`
 -- AUTO_INCREMENT for table `app_ruangan`
 --
 ALTER TABLE `app_ruangan`
-  MODIFY `ruangan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ruangan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `app_shift`
@@ -1130,19 +1173,19 @@ ALTER TABLE `app_shift`
 -- AUTO_INCREMENT for table `keuangan_biaya`
 --
 ALTER TABLE `keuangan_biaya`
-  MODIFY `id_biaya` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_biaya` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `keuangan_transaksi`
 --
 ALTER TABLE `keuangan_transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `kuisioner_judul`
 --
 ALTER TABLE `kuisioner_judul`
-  MODIFY `id_kuisioner_judul` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kuisioner_judul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `kuisioner_mhs_hasil_tipe_dua`
@@ -1154,49 +1197,49 @@ ALTER TABLE `kuisioner_mhs_hasil_tipe_dua`
 -- AUTO_INCREMENT for table `kuisioner_mhs_hasil_tipe_satu`
 --
 ALTER TABLE `kuisioner_mhs_hasil_tipe_satu`
-  MODIFY `id_kuisioner_mhs_hasil_tipe_satu` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kuisioner_mhs_hasil_tipe_satu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `kuisioner_pertanyaan`
 --
 ALTER TABLE `kuisioner_pertanyaan`
-  MODIFY `id_kuisioner_pertanyaan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kuisioner_pertanyaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_dosen`
 --
 ALTER TABLE `tbl_dosen`
-  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_mahasiswa`
 --
 ALTER TABLE `tbl_mahasiswa`
-  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `temp_krs`
 --
 ALTER TABLE `temp_krs`
-  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tugas_mhs`
 --
 ALTER TABLE `tugas_mhs`
-  MODIFY `id_tugas_mhs` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_tugas_mhs` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `uploaded_file`
 --
 ALTER TABLE `uploaded_file`
-  MODIFY `id_bukti` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id_bukti` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
