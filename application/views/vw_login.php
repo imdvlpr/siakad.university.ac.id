@@ -4,21 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SIAKAD | LOGIN</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" />
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>source/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>source/img/logo.jpg"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/customcss.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>source/font-awesome/css/font-awesome.min.css">
+    <!-- JS -->
+    <script src="<?php echo base_url(); ?>source/js/jquery-3.3.1.js"></script>
+    <script src="<?php echo base_url(); ?>source/js/jquery.dataTables.min.js"></script>
+    <script src="<?php echo base_url(); ?>source/js/popper.min.js"></script>
+    <script src="<?php echo base_url(); ?>source/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>source/js/bootstrap-datepicker.min.js"></script>
   </head>
   <style type="text/css">
     body{
-        background-image: url("http://baa.telkomuniversity.ac.id/wp-content/uploads/2016/10/P_20150820_165253-e1478601677404.jpg");
+        background-image: url("<?php echo base_url(); ?>source/img/bglogin.jpg");
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -80,7 +86,6 @@
   <body class="hold-transition login-page" style="overflow: hidden; background-color: transparent;">
       <header class="main-header">
         <a href="#" class="logo" style="background-color: transparent; width:33%; text-align:left; padding-left:50px;">
-          <!-- <span class="logo-mini"><b>U</b>NV</span> -->
           <b>SIAKAD UNIV</b>
         </a>
         <nav class="navbar navbar-static-top">

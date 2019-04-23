@@ -58,7 +58,7 @@ table td{
 	<header>
 		<div class="hd_print_biodatamhs" width="100%" align="center" style="float:">
 			<div style="width:auto;position: middle;margin:5px;">
-				<img src="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" style="width:30mm;height:33mm">
+				<img src="<?php echo base_url(); ?>source/img/logo.jpg" style="width:30mm;height:33mm">
 			</div>
 			<h3 align="center">KARTU STUDI MAHASISWA</h3>
 		</div>

@@ -2,21 +2,22 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/825975579388239872/UiPXPhkL_400x400.jpg" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>source/img/logo.jpg"/>
 <!-- CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>source/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/ionicons.min.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap-datepicker3.min.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>source/css/customcss.css">
+
+<link rel="stylesheet" href="<?php echo base_url(); ?>source/font-awesome/css/font-awesome.min.css">
 <!-- JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>source/js/jquery-3.3.1.js"></script>
+<script src="<?php echo base_url(); ?>source/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url(); ?>source/js/popper.min.js"></script>
+<script src="<?php echo base_url(); ?>source/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>source/js/bootstrap-datepicker.min.js"></script>
 <!-- CUSTOM JS -->
 <script type="text/javascript">
